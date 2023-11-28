@@ -1,0 +1,301 @@
+/* Aca estan los estilos para el main */
+
+@import url("./general.style.css");
+@import url("./keyframe.style.css");
+
+main
+{
+    flex: 1;
+}
+
+/* Estilos para el logo */
+#logo-section
+{
+    background: url("../media/images/tavern-image.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+
+.logo
+{
+    height: 75vmin;
+    width: 75vmin;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: show 1.5s ease-in-out;
+}
+
+.logo > img
+{
+    height: 100%;
+}
+
+.logo > p
+{
+    font-size: clamp(0.5em, 3vw, 1.5em);
+}
+
+.section-main
+{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1em;
+    animation: show 1.5s ease-in-out;
+}
+
+.section-main h1,
+.section-main h2
+{
+    border-bottom: 3px solid var(--colorHeaderUnderline);
+    padding-bottom: 0.1em;
+    margin-bottom: 0.25em;
+    font-size: clamp(1.5em, 5vw, 2em);
+}
+
+.section-main p
+{
+    font-size: clamp(0.8em, 5vw, 1em);
+}
+
+.description
+{
+    margin-bottom: 1em;
+    display: flex;
+    padding: 5%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+iframe, .image
+{
+    border-image: url("../media/images/note-border.png") 12 stretch;
+    border-image-outset: 12px 0px;
+    border-image-width: 15px;
+    box-shadow: 0px 0px 5px 5px #8f8971;
+    align-self: center;
+}
+
+.image
+{
+    max-width: 90%;
+}
+
+iframe
+{
+   width: 90%;
+}
+ 
+.tavern , .inn, .shows, 
+.stable, .potions
+{
+    margin-top: 40%;
+}
+
+#potions-catalog
+{
+    flex-direction: column;
+    margin-top: 3.4em;
+}
+
+/* Tablas */
+table
+{
+    box-sizing: border-box;
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+table, th, td 
+{
+    padding: 2em;
+    text-align: center;
+}
+
+thead
+{
+    font-family: var(--fontItemsTableHeader);
+    font-size: clamp(1em, 5vw, 1.5em);
+    text-align: center;
+}
+
+tbody
+{
+    font-family: var(--fontItemsBody);
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: var(--colorBackgoundItemsTable);
+}
+
+td 
+{
+    height: 5em;
+}
+
+/* Formulario */
+.form
+{
+    padding-top: 1em ;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input
+{
+    width: 100%;
+    font-size: clamp(0.7em, 2vw, 1em);
+    padding: 0.6em 0.6em;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #fff;
+    resize: none;
+    font-family: var(--fontForm);
+    margin-bottom: 1em;
+}
+
+.name-subjet, .message
+{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label 
+{
+    transform: translateY(-12px) scale(1);
+    transform-origin: left top;
+}
+
+label 
+{
+    font-size: clamp(0.9em, 2vw, 1em);
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+    font-family: var(--fontForm);
+}
+
+.form-submit 
+{
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--colorSendButton);
+    font-size: 1.3em;
+    padding: 0.6em;
+    border: none;
+}
+
+.form-submit:hover
+{
+    background-color: var(--colorSendButtonHover);
+}
+
+.name, .email,
+.message
+{
+    position: relative;
+}
+
+#error-name,
+#error-email,
+#error-message
+{
+    color: var(--colorErrorMessage);
+    font-family: var(--fontErrorMessage);
+    position: absolute;
+    right: 0;
+    font-size: clamp(0.9em, 2vw, 1em);
+}
+
+.message p
+{
+    background-color: #fff;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+  
+/* Mediaqueris */
+@media screen and (min-width: 1080px) 
+{
+    #logo-section
+    {
+        background-size: 100svw 100svh;
+    }
+
+    .tavern, .inn,
+    .shows, .stable,
+    .potions
+    {
+        margin: 10em 3em;
+    }
+
+    .our-history, .potions-catalog,
+    .location, .form-contact
+    {
+        margin: 7em 3em;
+    }
+    .section-main
+    {
+        flex-direction: row;
+        height: max-content;
+    }
+   
+    .image
+    {
+        max-width: 30%;
+        object-fit: fill;
+    }
+
+    iframe
+    {
+        width: 65svw;
+    }
+
+    .description
+    {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    section:nth-child(even) div
+    {
+        order: 2;
+    }
+
+    /* Formularios */
+    .form
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .form-input
+    {
+        margin-bottom: 0;
+    }
+
+    .name-subjet, .message
+    {
+        width: 49%;
+    }
+
+    .name-subjet
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

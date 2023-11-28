@@ -1,0 +1,143 @@
+/* Aca estan los estilos para el header */
+
+@import url("./general.style.css");
+
+header
+{
+  position: sticky;
+  top: 0;
+   z-index: 4;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav h3
+{
+  position: absolute;
+  right: 1em;
+  font-size: clamp(1em, 5svw, 1.5em);
+  z-index: 3;
+}
+
+nav a
+{
+  text-decoration: none;
+  color: var(--colorHeaderText);
+}
+
+.hamburger-menu-container::after
+{
+  content: "Menu";
+  padding-left: 0.5em;
+  font-size: clamp(1em, 5svw, 1.5em);
+  font-family: var(--fontMenu);
+}
+
+.hamburger-menu-container
+{
+  background-color: var(--colorBackgroundHeader);
+  width: 100svw;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+.hamburger-menu
+{
+  height: 1.5em;
+  width: 2.5em;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5em;
+  margin-left: 1em;
+}
+
+.ham-bar
+{
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform .6s, opacity .8s, top .6s;
+}
+
+.bar-top
+{
+  top: 25%;
+}
+
+.bar-bottom
+{
+  top: 75%;
+} 
+
+.hamburger-menu.active .bar-top
+{
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+ 
+.hamburger-menu.active .bar-mid
+{
+  opacity: 0;
+}
+ 
+.hamburger-menu.active .bar-bottom
+{
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+ 
+.off-screen-menu
+{
+  position: fixed;
+  top: 0;
+  left: -150%;
+  background-color: var(--colorBackground);
+  height: 120svh;
+  width: 100svw;
+  justify-content: center;
+  transition: left 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.off-screen-menu.active
+{
+  left: 0;
+}
+
+.navigation-links-list{
+  list-style-type: none;
+  font-family: var(--fontMenu);
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1em;
+  padding-bottom: 2em;
+}
+
+.navigation-links-list a{
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (min-width: 1080px)
+{
+  .off-screen-menu
+  {
+      justify-content: flex-start;
+      width: 50svw;
+  }
+}
+

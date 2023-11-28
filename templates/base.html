@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/header.style.css">
+    <link rel="stylesheet" href="./assets/css/main.style.css">
+    <link rel="stylesheet" href="./assets/css/footer.style.css">
+    <link rel="shortcut icon" href="./assets/media/icons/galeon.png" type="image/x-icon">
+    <title>Driftwood Tavern: {{current_page}}</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3><a href="./index.html">Driftwood Tavern</a></h3>
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div class="ham-bar bar-top"></div>
+                    <div class="ham-bar bar-mid"></div>
+                    <div class="ham-bar bar-bottom"></div>
+                </div>
+            </div>
+            <div class="off-screen-menu">
+                <ul class="navigation-links-list">
+                    <li><a href="{% url 'index' %}#html">Home</a></li>
+                    <li><a href="{% url 'our_history' %}">Our history</a></li>
+                    <li><a href="{% url 'location' %}">Location</a></li>
+                    <li><a href="{% url 'potions_catalog' %}">Potions Catalog</a></li>
+                    <li><a href="{% url 'contact_form' %}">Contact Us</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+        <section class="social-media section-footer" id="social-media">
+            <h3>Social media</h3>
+            <ul class="social-media-links-list">
+                <li>Facebook<a href="https://www.facebook.com/dndbeyond/" target="_blank"
+                        rel="noopener noreferrer nofollow">
+                        <img src="./assets/media/icons/facebook.png" alt="facebook icon">
+                    </a></li>
+                <li>Twitter<a href="https://twitter.com/DnDBeyond" target="_blank" rel="noopener noreferrer nofollow">
+                        <img src="./assets/media/icons/gorjeo.png" alt="twitter icon">
+                    </a></li>
+                <li>Instagram<a href="https://www.instagram.com/dndbeyond/?hl=es" target="_blank"
+                        rel="noopener noreferrer nofollow">
+                        <img src="./assets/media/icons/instagram.png" alt="instagram icon">
+                    </a></li>
+            </ul>
+        </section>
+
+        <section class="rights section-footer">
+            <h4>Rights and Disclaimers</h4>
+            <p>
+                This page is created for an assignment and is unofficial Fan Content created by the fan community and
+                allowed under Wizards of the Coast's Fan Content Policy.
+                This website and its content are not approved, endorsed, or sponsored by Wizards of the Coast.
+                <br>
+                All trademarks and copyrights are the property of their respective owners.
+                Portions of the materials used are property of Wizards of the Coast.
+                ©Wizards of the Coast LLC.
+            </p>
+            </p>
+        </section>
+    </footer>
+
+    <script type="module" src="./assets/js/menu.script.js"></script>
+    <script type="module" src="../assets/js/validations.script.js"></script>
+    <script type="module" src="../assets/js/potions-catalog.script.js"></script>
+</body>
+
+</html>

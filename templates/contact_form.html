@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="form-contact section-main">
+    <div class="form-container description">
+        <h1>Contact Us</h1>
+        <p>
+            We provide a <i><b>Scroll of Sending</b></i> for you to send us your inquiries. Remember,
+            the message must not exceed <i><b>25 words</i></b>,
+            and if you're on another plane of existence, there's a 5% chance that the message doesn't arrive.
+        </p>
+        <form action="https://getform.io/f/be8c4521-1a85-4cf1-bbed-5795925bde45" method="POST" class="form"
+            id="contact-form">
+            <div class="name-subjet">
+                <div class="name">
+                    <label for="name" class="form-label"> Name:</label>
+                    <span id="error-name"></span>
+                    <input type="text" name="name" id="name" class="form-input" required>
+                </div>
+
+                <div class="email">
+                    <label for="email" class="form-label">Email:</label>
+                    <span id="error-email"></span>
+                    <input type="text" name="email" id="email" class="form-input" required>
+                </div>
+            </div>
+            <div class="message">
+                <label for="message" class="form-label">Message:</label>
+                <span id="error-message"></span>
+                <textarea type="message" name="message" rows="4" id="message" class="form-input" required></textarea>
+                <P>Total words: <span id="wordCount">0</span></P>
+            </div>
+            <input type="submit" class="form-submit" id=submit value="Enviar">
+        </form>
+    </div>
+    <img class="image" src="../assets/media/images/scroll-of-sending.png" alt="scroll pciture">
+</section>
+
+{% endblock %}

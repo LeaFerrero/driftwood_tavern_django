@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="location section-main">
+    <div class="description">
+        <h1>Location</h1>
+        <p>
+            We are located in the beautiful city of Neverwinter, in Protectors Enclave.
+            Entering through the south gate, you need to walk past the market, turn right at the central square,
+            and as soon as you round the corner of the alley, there we are. <br>
+            We provide an interactive map of the district to make it easier for you to visit us!
+        </p>
+    </div>
+    <iframe id="protectors-enclave-map" width="560" height="350"
+        src="https://neverwinteractive.com/protectors-enclave.php?location=driftwood-tavern" frameborder="0"
+        allowfullscreen></iframe>
+</section>
+
+{% endblock %}
