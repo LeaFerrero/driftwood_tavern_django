@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/header.style.css">
-    <link rel="stylesheet" href="./assets/css/main.style.css">
-    <link rel="stylesheet" href="./assets/css/footer.style.css">
-    <link rel="shortcut icon" href="./assets/media/icons/galeon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/header.style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.style.css' %}">
+    <link rel="shortcut icon" href="{% static 'media/icons/galeon.png' %}" type="image/x-icon">
     <title>Driftwood Tavern: {{current_page}}</title>
 </head>
 
@@ -47,14 +47,14 @@
             <ul class="social-media-links-list">
                 <li>Facebook<a href="https://www.facebook.com/dndbeyond/" target="_blank"
                         rel="noopener noreferrer nofollow">
-                        <img src="./assets/media/icons/facebook.png" alt="facebook icon">
+                        <img src="{% static '' %}media/icons/facebook.png" alt="facebook icon">
                     </a></li>
                 <li>Twitter<a href="https://twitter.com/DnDBeyond" target="_blank" rel="noopener noreferrer nofollow">
-                        <img src="./assets/media/icons/gorjeo.png" alt="twitter icon">
+                        <img src="{% static '' %}media/icons/gorjeo.png" alt="twitter icon">
                     </a></li>
                 <li>Instagram<a href="https://www.instagram.com/dndbeyond/?hl=es" target="_blank"
                         rel="noopener noreferrer nofollow">
-                        <img src="./assets/media/icons/instagram.png" alt="instagram icon">
+                        <img src="{% static '' %}media/icons/instagram.png" alt="instagram icon">
                     </a></li>
             </ul>
         </section>
@@ -74,9 +74,9 @@
         </section>
     </footer>
 
-    <script type="module" src="./assets/js/menu.script.js"></script>
-    <script type="module" src="../assets/js/validations.script.js"></script>
-    <script type="module" src="../assets/js/potions-catalog.script.js"></script>
+    <script type="module" src="{% static '' %}js/menu.script.js"></script>
+    <script type="module" src=".{% static '' %}js/validations.script.js"></script>
+    <script type="module" src=".{% static '' %}js/potions-catalog.script.js"></script>
 </body>
 
 </html>
