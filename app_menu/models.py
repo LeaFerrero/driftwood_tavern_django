@@ -10,9 +10,18 @@ class Menu(Model):
         ('drink', 'Drink'),
     ]
 
+    CURRENCY_CHOICES = [
+        ("cp", "cp"),
+        ("sp", "sp"),
+        ("ep", "ep"),
+        ("gp", "gp"),
+        ("pp", "pp"),
+    ]
+
     name = models.CharField(max_length=255)
     description = models.TextField(blank=False) 
-    price = models.CharField(max_length=10)
+    price_amount = models.PositiveIntegerField(null=False, blank=False, default=1)
+    currency = models.CharField(max_length=2, choices=CURRENCY_CHOICES, default="cp")
     item_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
 
     class Meta:

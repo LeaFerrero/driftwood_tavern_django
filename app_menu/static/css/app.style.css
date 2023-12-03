@@ -1,0 +1,229 @@
+/* Aca estan los estilos para el main */
+
+@import url("./app.general.style.css");
+@import url("./app.keyframe.style.css");
+
+.app-menu {
+    margin: 2em 1em;
+    animation: show 1.5s ease-in-out;
+}
+
+.app-menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-menu h1 {
+    border-bottom: 3px solid var(--colorHeaderUnderline);
+    padding-bottom: 0.1em;
+    margin-bottom: 0.25em;
+    font-size: clamp(1.5em, 5vw, 2em);
+}
+
+.app-menu h2 {
+    border-bottom: 3px solid var(--colorHeaderUnderline);
+    padding-bottom: 0.1em;
+    margin-bottom: 0.25em;
+}
+
+
+.app-menu h3>a:hover {
+    cursor: pointer
+}
+
+.app-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.app-menu a:visited {
+    color: inherit;
+}
+
+.app-menu-create,
+.app-menu-delete,
+.app-menu-detail {
+    margin-bottom: 1em;
+    padding: 5%;
+    width: 50%;
+}
+
+/* Tablas */
+.app-menu-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.food,
+.drink {
+    margin-top: 7em;
+}
+
+.app-menu-content table,
+.app-menu-content th,
+.app-menu-content td {
+    padding: 0 2.5em 0 2.5em;
+    text-align: center;
+}
+
+.app-menu-content thead {
+    font-family: var(--fontItemsTableHeader);
+    font-size: clamp(0.8em, 4vw, 1em);
+    text-align: center;
+}
+
+.app-menu-content tbody {
+    font-family: var(--fontItemsBody);
+}
+
+.app-menu-content tbody tr:nth-child(odd) {
+    background-color: var(--colorBackgoundItemsTable);
+}
+
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1em;
+}
+
+/* Formulario */
+.form {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-menu-form input {
+    width: 100%;
+    font-size: clamp(0.7em, 2vw, 1em);
+    padding: 0.6em 0.6em;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #fff;
+    resize: none;
+    font-family: var(--fontForm);
+    margin-bottom: 1em;
+}
+
+.name-subjet,
+.message {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.app-menu-form label {
+    font-size: clamp(0.9em, 2vw, 1em);
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+    font-family: var(--fontForm);
+    margin-bottom: 50px;
+}
+
+.app-menu-form input[type="text"],
+.app-menu-form textarea,
+.app-menu-form select {
+    width: 100%;
+    font-size: clamp(0.7em, 2vw, 1em);
+    padding: 0.6em 0.6em;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #fff;
+    resize: none;
+    font-family: var(--fontForm);
+    margin-bottom: 1em;
+}
+
+.app-menu-form input[type="submit"],
+.app-menu-delete input[type="submit"],
+.cancel-button {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--colorSendButton);
+    font-size: 1.3em;
+    padding: 0.6em;
+    border: none;
+    margin-top: 1em;
+}
+
+.app-menu-form input[type="submit"]:hover,
+.app-menu-delete input[type="submit"]:hover {
+    background-color: var(--colorSendButtonHover);
+}
+
+.cancel-button:hover {
+    background-color: var(--colorCancelButton);
+}
+
+.name,
+.email,
+.message {
+    position: relative;
+}
+
+#error-name,
+#error-email,
+#error-message {
+    color: var(--colorErrorMessage);
+    font-family: var(--fontErrorMessage);
+    position: absolute;
+    right: 0;
+    font-size: clamp(0.9em, 2vw, 1em);
+}
+
+.message p {
+    background-color: #fff;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mediaqueris */
+@media screen and (min-width: 1080px) {
+    .app-menu {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        margin: 5em 3em;
+    }
+
+    .app-menu-content .app-menu-tables {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .app-menu-tables {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5em;
+
+    }
+
+    .app-menu-tables table {
+        width: 40svw;
+    }
+
+    .food,
+    .drink {
+        margin-top: 0;
+    }
+
+    /* Formularios */
+    .app-menu-form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .app-menu-form input {
+        margin-bottom: 0;
+    }
+}

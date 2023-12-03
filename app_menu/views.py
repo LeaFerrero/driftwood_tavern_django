@@ -30,17 +30,17 @@ class MenuDetailView(MenuBaseView,DetailView):
 class MenuCreateView(MenuBaseView,CreateView):
     template_name = "menu_create.html"
     extra_context = {
-        "tipo": "Create"
+        "current_page": "Create"
     }
 
 class MenuUpdateView(MenuBaseView,UpdateView):
     template_name = "menu_create.html"
     extra_context = {
-        "tipo": "Update"
+        "current_page": "Update"
     }
-
+    
 class MenuDeleteView(MenuBaseView,DeleteView):
     template_name = "menu_delete.html"
     extra_context = {
-        "tipo": "Delete"
+        "current_page": "Delete"
     }

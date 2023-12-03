@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <section class="app-menu app-menu-container">
+        <div class="app-menu-detail">
+            <h1>{{menu.name}}</h1>
+            Description: {{menu.name}} <br>
+            Price: {{menu.price}} <br>
+            Type: {{menu.item_type}}
+
+            <a href="{% url 'menu:all' %}">Back to the menu</a>
+        </div>
+        <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+    </section>
+</main>
+
+{% endblock %}

@@ -2,16 +2,17 @@
 {% block content %}
 
 <main>
-    <section class="main-color-vinos">
-        <h1>Delete this item?</h1>
-        <h2>{{menu.name}}</h2>
-        <form method="post">
-            {% csrf_token %}
-            <div>{{form.as_p}}</div>
-            <input type="submit" value="{{ tipo }}" />
-        </form>
-
-        <a href="{% url 'vinos:all' %}">Cancelar</a>
+    <section class="app-menu app-menu-container">
+        <div class="app-menu-delete">
+            <h1>Delete this item?</h1>
+            <h2>{{menu.name}}</h2>
+            <form method="post">
+                {% csrf_token %}
+                <div>{{form.as_p}}</div>
+                <input type="submit" value="{{ current_page }}" />
+            </form>
+            <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+        </div>
     </section>
 </main>
 

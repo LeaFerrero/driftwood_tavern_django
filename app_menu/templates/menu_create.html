@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <section class="app-menu app-menu-container">
+        <div class="app-menu-create">
+            <h1>{{current_page}} Item Menu </h1>
+            <form method="post" class="app-menu-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <input type="submit" value="{{ current_page }}" />
+            </form>
+            <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

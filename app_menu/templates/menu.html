@@ -3,73 +3,74 @@
 {% block content %}
 
 <main>
-    <section class="section-main food-menu">
-        <div class="description">
+    <section class="app-menu">
+        <div class="app-menu-content">
             <h1>Menu</h1>
-            <div>
-                <h3>Comidas</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Description</td>
-                            <td>Price</td>
-                            <td>Action</td>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <h3><a href="{% url 'menu:create' %}">Add item</a></h3>
+            <div class="app-menu-tables">
+                <div class="food">
+                    <h2>Food</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                        {% for item in menu_list %}
-                        {% if item.item_type == 'food' %}
+                            {% for item in menu_list %}
+                            {% if item.item_type == 'food' %}
 
-                        <tr>
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.description }}</td>
-                            <td>{{ item.price }}</td>
-                            <td>
-                                <a href="{% url 'menu:update' item.id %}">Update</a>
-                                <a href="{% url 'menu:delete' item.id %}">Delete</a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.price_amount }} {{ item.currency }}</td>
+                                <td class="actions">
+                                    <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
+                                    <a href="{% url 'menu:update' item.id %}">Update</a><br>
+                                    <a href="{% url 'menu:delete' item.id %}">Delete</a>
+                                </td>
+                            </tr>
 
-                        {% endif %}
-                        {% endfor %}
+                            {% endif %}
+                            {% endfor %}
 
-                    </tbody>
-                </table>
-            </div>
+                        </tbody>
+                    </table>
+                </div>
 
-            <div>
-                <h3>Bebidas</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Name</td>
-                            <td>Description</td>
-                            <td>Price</td>
-                            <td>Action</td>
-                        </tr>
-                    </thead>
-                    <tbody>
+                <div class="drink">
+                    <h2>Drinks</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                        {% for item in menu_list %}
-                        {% if item.item_type == 'drink' %}
+                            {% for item in menu_list %}
+                            {% if item.item_type == 'drink' %}
 
-                        <tr>
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.description }}</td>
-                            <td>{{ item.price }}</td>
-                            <td>
-                                <a href="{% url 'menu:update' item.id %}">Update</a>
-                                <a href="{% url 'menu:delete' item.id %}">Delete</a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.price_amount }} {{ item.currency }}</td>
+                                <td class="actions">
+                                    <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
+                                    <a href="{% url 'menu:update' item.id %}">Update</a><br>
+                                    <a href="{% url 'menu:delete' item.id %}">Delete</a>
+                                </td>
+                            </tr>
 
-                        {% endif %}
-                        {% endfor %}
+                            {% endif %}
+                            {% endfor %}
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
