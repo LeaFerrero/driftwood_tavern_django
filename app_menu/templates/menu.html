@@ -5,11 +5,19 @@
 <main>
     <section class="app-menu">
         <div class="app-menu-content">
-            <h1>Menu</h1>
-            <h3><a href="{% url 'menu:create' %}">Add item</a></h3>
+            <h1>Menu<span><a href="{% url 'menu:create' %}">Add item</a></span></h1>
+            <p>
+                Savor the essence of the Sword Coast at Driftwood Tavern, where every dish and drink is a harmonious
+                blend of
+                flavors inspired by the rich culinary heritage of the region. From the robust tastes of the land to the
+                bounties of the sea, our menu is a celebration of the diverse and vibrant palette that defines the Sword
+                Coast.
+                Join us for a gastronomic journey that captures the spirit of this coastal paradise in every exquisite
+                bite.
+            </p>
             <div class="app-menu-tables">
-                <div class="food">
-                    <h2>Food</h2>
+                <div class="dish">
+                    <h2>Dishes</h2>
                     <table>
                         <thead>
                             <tr>
@@ -21,7 +29,7 @@
                         <tbody>
 
                             {% for item in menu_list %}
-                            {% if item.item_type == 'food' %}
+                            {% if item.item_type == "dish" %}
 
                             <tr>
                                 <td>{{ item.name }}</td>
@@ -53,7 +61,7 @@
                         <tbody>
 
                             {% for item in menu_list %}
-                            {% if item.item_type == 'drink' %}
+                            {% if item.item_type == "drink" %}
 
                             <tr>
                                 <td>{{ item.name }}</td>

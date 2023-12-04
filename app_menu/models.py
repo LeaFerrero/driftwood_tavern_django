@@ -8,7 +8,7 @@ from django.core.validators import MinValueValidator
 class Menu(Model):
 
     TYPE_CHOICES = [
-        ('food', 'Food'),
+        ('dish', 'Dish'),
         ('drink', 'Drink'),
     ]
 

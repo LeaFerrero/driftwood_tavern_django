@@ -18,23 +18,6 @@ class MenuBaseView(View):
     fields = '__all__'
     success_url = reverse_lazy('menu:all')
 
-    page_names = {
-        "menu": 'Menu',
-    }
-
-    def get_context_data(self, **kwargs):
-        """
-        Anula el método get_context_data para incluir datos de contexto personalizados.
-
-        Returns:
-            dict: Un diccionario que contiene los datos de contexto base junto con el nombre de la página actual.
-
-        """
-        context = super().get_context_data(**kwargs)
-        view_name = self.request.resolver_match.url_name
-        context["current_page"] = self.page_names.get(view_name, view_name.capitalize())
-        return context
-
 
 class MenuListView(MenuBaseView,ListView):
     """
@@ -44,7 +27,7 @@ class MenuListView(MenuBaseView,ListView):
 class MenuDetailView(MenuBaseView,DetailView):
     template_name = "menu_detail.html"
     extra_context = {
-        "current_page": "Menu"
+        "current_page": "Detail"
     }
 
 class MenuCreateView(MenuBaseView,CreateView):

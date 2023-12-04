@@ -19,6 +19,15 @@
     padding-bottom: 0.1em;
     margin-bottom: 0.25em;
     font-size: clamp(1.5em, 5vw, 2em);
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.app-menu h1>span {
+    position: absolute;
+    right: 0;
+    top: 0.25em;
+    font-size: 0.75em;
 }
 
 .app-menu h2 {
@@ -60,7 +69,7 @@
     border-collapse: collapse;
 }
 
-.food,
+.dish,
 .drink {
     margin-top: 7em;
 }
@@ -118,11 +127,7 @@
     position: relative;
 }
 
-.name-subjet,
-.message {
-    width: 100%;
-    margin-bottom: 1em;
-}
+
 
 .app-menu-form label {
     font-size: clamp(0.9em, 2vw, 1em);
@@ -178,15 +183,6 @@
     top: 0;
 }
 
-.message p {
-    background-color: #fff;
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 
 /* Mediaqueris */
 @media screen and (min-width: 1080px) {
@@ -211,16 +207,15 @@
     .app-menu-tables {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-top: 5em;
-
     }
 
     .app-menu-tables table {
-        width: 40svw;
+        width: 44svw;
     }
 
-    .food,
+    .dish,
     .drink {
         margin-top: 0;
     }
