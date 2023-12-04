@@ -2,43 +2,37 @@
 
 @import url("./general.style.css");
 
-header
-{
+header {
   position: sticky;
   top: 0;
-   z-index: 4;
+  z-index: 4;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-nav h3
-{
+nav h3 {
   position: absolute;
   right: 1em;
   font-size: clamp(1em, 5svw, 1.5em);
   z-index: 3;
 }
 
-nav a
-{
+nav a {
   text-decoration: none;
-  color: var(--colorHeaderText);
 }
 
-.hamburger-menu-container::after
-{
+.hamburger-menu-container::after {
   content: "Menu";
   padding-left: 0.5em;
   font-size: clamp(1em, 5svw, 1.5em);
   font-family: var(--fontMenu);
 }
 
-.hamburger-menu-container
-{
+.hamburger-menu-container {
   background-color: var(--colorBackgroundHeader);
   width: 100svw;
   z-index: 2;
@@ -47,8 +41,7 @@ nav a
   height: 3em;
 }
 
-.hamburger-menu
-{
+.hamburger-menu {
   height: 1.5em;
   width: 2.5em;
   position: relative;
@@ -57,8 +50,7 @@ nav a
   margin-left: 1em;
 }
 
-.ham-bar
-{
+.ham-bar {
   width: 50%;
   height: 2px;
   background-color: #fff;
@@ -69,35 +61,29 @@ nav a
   transition: transform .6s, opacity .8s, top .6s;
 }
 
-.bar-top
-{
+.bar-top {
   top: 25%;
 }
 
-.bar-bottom
-{
+.bar-bottom {
   top: 75%;
-} 
+}
 
-.hamburger-menu.active .bar-top
-{
+.hamburger-menu.active .bar-top {
   transform: translate(-50%, -50%) rotate(-315deg);
   top: 50%;
 }
- 
-.hamburger-menu.active .bar-mid
-{
+
+.hamburger-menu.active .bar-mid {
   opacity: 0;
 }
- 
-.hamburger-menu.active .bar-bottom
-{
+
+.hamburger-menu.active .bar-bottom {
   transform: translate(-50%, -50%) rotate(-225deg);
   top: 50%;
 }
- 
-.off-screen-menu
-{
+
+.off-screen-menu {
   position: fixed;
   top: 0;
   left: -150%;
@@ -111,12 +97,11 @@ nav a
   justify-content: center;
 }
 
-.off-screen-menu.active
-{
+.off-screen-menu.active {
   left: 0;
 }
 
-.navigation-links-list{
+.navigation-links-list {
   list-style-type: none;
   font-family: var(--fontMenu);
   font-size: 2em;
@@ -127,17 +112,14 @@ nav a
   padding-bottom: 2em;
 }
 
-.navigation-links-list a{
+.navigation-links-list a {
   text-decoration: none;
   color: #000;
 }
 
-@media screen and (min-width: 1080px)
-{
-  .off-screen-menu
-  {
-      justify-content: flex-start;
-      width: 50svw;
+@media screen and (min-width: 1080px) {
+  .off-screen-menu {
+    justify-content: flex-start;
+    width: 50svw;
   }
 }
-

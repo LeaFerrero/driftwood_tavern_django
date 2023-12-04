@@ -2,32 +2,27 @@
 
 @import url("./general.style.css");
 
-footer
-{
+footer {
     background-color: var(--colorBackgroundFooter);
     text-align: center;
 }
 
-.section-footer
-{
+.section-footer {
     margin-top: 4em;
 }
 
-.social-media > h3
-{
+.social-media>h3 {
     padding-top: 1em;
     margin-bottom: 1em;
     font-size: clamp(1em, 5svw, 1.5em);
 }
 
-.social-media a
-{
+.social-media a {
     text-decoration: none;
     color: #000;
 }
 
-.social-media-links-list
-{
+.social-media-links-list {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -36,26 +31,22 @@ footer
     font-size: clamp(0.5em, 5svw, 1em);
 }
 
-.social-media-links-list li
-{
+.social-media-links-list li {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.social-media-links-list img
-{
+.social-media-links-list img {
     max-width: 20%;
     height: auto;
 }
 
-.rights > h4
-{
+.rights>h4 {
     font-size: clamp(0.2em, 5svw, 1.2em);
 }
 
-.rights p
-{
+.rights p {
     padding: 0.5% 5% 2% 5%;
     font-family: var(--fontFooter);
     font-size: clamp(0.2em, 5svw, 1em);
@@ -63,9 +54,8 @@ footer
 
 /* Mediaqueries */
 
-@media screen and (min-width: 880px)
-{
-    .social-media-links-list img{
+@media screen and (min-width: 880px) {
+    .social-media-links-list img {
         max-width: 15%;
         height: auto;
     }

@@ -1,4 +1,4 @@
-/* Aca estan los estilos generales que se aplican a todo el sitio */
+/* Aca estan los estilos generales que se aplican a app_menu */
 
 @font-face {
     font-family: "Booksanity";
@@ -28,21 +28,10 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Scaly Sans Caps";
-    src: url("../media/fonts/Scaly-Sans-Caps.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
 
     /* Colores */
-    --colorBackground: #EEE5CE;
-    --colorBackgroundFooter: #BBAD82;
-    --colorBackgroundHeader: #C9AD6A;
     --colorBackgoundItemsTable: #d2e6c8;
-    --colorBackgroundLogo: #766649;
     --colorCancelButton: #9C2B1B;
     --colorErrorMessage: #9C2B1B;
     --colorHeaderUnderline: #C0AD6A;
@@ -53,34 +42,15 @@
     /* Fuentes */
     --fontErrorMessage: "Scaly Sans";
     --fontForm: "Scaly Sans";
+    --fontHeaderText: "Mr Eaves Small Caps";
     --fontItemsTableHeader: "Scaly Sans Bold";
     --fontItemsBody: "Scaly Sans";
-    --fontMenu: "Scaly Sans Caps";
     --fontParagraph: "Booksanity";
-
-    /* Imagenes de fondo */
-    --imageBackgroundText: url("../media/images/background.jpg");
-}
-
-*,
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--colorBackground);
-    background-image: var(--imageBackgroundText);
-    display: flex;
-    flex-direction: column;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     color: var(--colorHeaderText);
     font-family: var(--fontHeaderText);
 }
