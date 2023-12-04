@@ -4,14 +4,26 @@
 <main>
     <section class="app-menu app-menu-container">
         <div class="app-menu-delete">
-            <h1>Delete this item?</h1>
-            <h2>{{menu.name}}</h2>
+            <h1>{{ current_page }}</h1>
+
+            <h3>Name:</h3>
+            <p>{{ menu.name }}</p>
+
+            <h3>Description:</h3>
+            <p>{{ menu.description }}</p>
+
+            <h3>Price:</h3>
+            <p>{{ menu.price_amount }} {{ menu.currency }}</p>
+
+            <h3>Type:</h3>
+            <p>Type: {{menu.item_type}}</p>
+
             <form method="post">
                 {% csrf_token %}
-                <div>{{form.as_p}}</div>
+                <div>{{form.as_div}}</div>
                 <input type="submit" value="{{ current_page }}" />
             </form>
-            <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+            <a href="{% url 'menu:all' %}"><button class="cancel-button">Cancel</button></a>
         </div>
     </section>
 </main>

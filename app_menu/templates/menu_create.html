@@ -5,14 +5,14 @@
 <main>
     <section class="app-menu app-menu-container">
         <div class="app-menu-create">
-            <h1>{{current_page}} Item Menu </h1>
+            <h1>{{current_page}}</h1>
             <form method="post" class="app-menu-form">
                 {% csrf_token %}
-                {{ form.as_p }}
+                {{ form.as_div }}
 
                 <input type="submit" value="{{ current_page }}" />
             </form>
-            <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+            <a href="{% url 'menu:all' %}"><button class="cancel-button">Cancel</button></a>
         </div>
     </section>
 </main>

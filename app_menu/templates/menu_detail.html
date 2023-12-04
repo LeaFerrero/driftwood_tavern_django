@@ -5,14 +5,23 @@
 <main>
     <section class="app-menu app-menu-container">
         <div class="app-menu-detail">
-            <h1>{{menu.name}}</h1>
-            Description: {{menu.name}} <br>
-            Price: {{menu.price}} <br>
-            Type: {{menu.item_type}}
+            <h1>{{ current_page }}</h1>
 
-            <a href="{% url 'menu:all' %}">Back to the menu</a>
+            <h3>Name:</h3>
+            <p>{{ menu.name }}</p>
+
+            <h3>Description:</h3>
+            <p>{{ menu.description }}</p>
+
+            <h3>Price:</h3>
+            <p>{{ menu.price_amount }} {{ menu.currency }}</p>
+
+            <h3>Type:</h3>
+            <p>{{menu.item_type}}</p>
+
+            <a href="{% url 'menu:all' %}"><button class="back-button">Back to Menu</button></a>
         </div>
-        <button class="cancel-button"><a href="{% url 'menu:all' %}"></a>Cancel</button>
+
     </section>
 </main>
 

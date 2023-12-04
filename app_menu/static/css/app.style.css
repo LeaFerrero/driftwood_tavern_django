@@ -1,4 +1,4 @@
-/* Aca estan los estilos para el main */
+/* Aca estan los estilos para la app*/
 
 @import url("./app.general.style.css");
 @import url("./app.keyframe.style.css");
@@ -46,7 +46,12 @@
 .app-menu-detail {
     margin-bottom: 1em;
     padding: 5%;
-    width: 50%;
+    width: 85svw;
+}
+
+.app-menu-delete>h3,
+.app-menu-detail>h3 {
+    margin-top: 1.5em;
 }
 
 /* Tablas */
@@ -90,10 +95,10 @@
 }
 
 /* Formulario */
-.form {
+
+.app-menu-form {
     padding-top: 1em;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .app-menu-form input {
@@ -106,7 +111,11 @@
     background-color: #fff;
     resize: none;
     font-family: var(--fontForm);
-    margin-bottom: 1em;
+}
+
+.app-menu-form div {
+    margin-top: 1em;
+    position: relative;
 }
 
 .name-subjet,
@@ -120,7 +129,6 @@
     transform: translateY(10px);
     transition: transform 0.5s, color 0.3s;
     font-family: var(--fontForm);
-    margin-bottom: 50px;
 }
 
 .app-menu-form input[type="text"],
@@ -135,23 +143,24 @@
     background-color: #fff;
     resize: none;
     font-family: var(--fontForm);
-    margin-bottom: 1em;
 }
 
 .app-menu-form input[type="submit"],
 .app-menu-delete input[type="submit"],
-.cancel-button {
+.cancel-button,
+.back-button {
     cursor: pointer;
     width: 100%;
     background-color: var(--colorSendButton);
     font-size: 1.3em;
     padding: 0.6em;
     border: none;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 .app-menu-form input[type="submit"]:hover,
-.app-menu-delete input[type="submit"]:hover {
+.app-menu-delete input[type="submit"]:hover,
+.back-button:hover {
     background-color: var(--colorSendButtonHover);
 }
 
@@ -159,20 +168,14 @@
     background-color: var(--colorCancelButton);
 }
 
-.name,
-.email,
-.message {
-    position: relative;
-}
-
-#error-name,
-#error-email,
-#error-message {
+.app-menu-form li {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
-    position: absolute;
     right: 0;
     font-size: clamp(0.9em, 2vw, 1em);
+    list-style-type: none;
+    position: absolute;
+    top: 0;
 }
 
 .message p {
@@ -192,6 +195,12 @@
         display: flex;
         flex-direction: column;
         margin: 5em 3em;
+    }
+
+    .app-menu-create,
+    .app-menu-delete,
+    .app-menu-detail {
+        width: 50%;
     }
 
     .app-menu-content .app-menu-tables {
