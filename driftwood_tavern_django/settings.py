@@ -34,6 +34,11 @@ CUSTOM_APPS = [
     "app_menu"
 ]
 
+EXTERNALS = [
+    "rest_framework"
+]
+
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -44,6 +49,8 @@ INSTALLED_APPS = [
 ]
 
 INSTALLED_APPS += CUSTOM_APPS
+
+INSTALLED_APPS += EXTERNALS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

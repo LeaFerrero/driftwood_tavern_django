@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path , include
+from .router import router
 
 from .views import *
 
@@ -12,3 +13,5 @@ urlpatterns = [
     path("<int:pk>/update/", MenuUpdateView.as_view(), name="update"),
     path("<int:pk>/delete/", MenuDeleteView.as_view(), name="delete"),
 ]
+
+urlpatterns += router.urls

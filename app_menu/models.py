@@ -8,7 +8,7 @@ from django.core.validators import MinValueValidator
 class Menu(Model):
 
     TYPE_CHOICES = [
-        ('dish', 'Dish'),
+        ('food', 'Food'),
         ('drink', 'Drink'),
     ]
 
@@ -49,7 +49,7 @@ class Menu(Model):
         verbose_name_plural = "Menu Items"
 
     def __str__(self):
-        return f"Name: {self.name}, detail: {self.item_type}, price: {self.price_amount} {self.currency}"
+        return f"Name: {self.name}, type: {self.item_type}, price: {self.price_amount} {self.currency}"
 
     def get_fields(self):
         return [

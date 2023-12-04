@@ -69,7 +69,7 @@
     border-collapse: collapse;
 }
 
-.dish,
+.food,
 .drink {
     margin-top: 7em;
 }
@@ -215,7 +215,7 @@
         width: 44svw;
     }
 
-    .dish,
+    .food,
     .drink {
         margin-top: 0;
     }
