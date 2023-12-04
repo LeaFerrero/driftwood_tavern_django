@@ -166,7 +166,7 @@
     background-color: var(--colorCancelButton);
 }
 
-.app-error-message {
+.app-error-container {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
     right: 0;
@@ -176,6 +176,15 @@
     top: 0;
 }
 
+.app-error-container {
+    color: red;
+    margin-top: 5px;
+}
+
+/* Estilos para los mensajes de error */
+.app-error-message {
+    margin-bottom: 5px;
+}
 
 /* Mediaqueris */
 @media screen and (min-width: 1080px) {
