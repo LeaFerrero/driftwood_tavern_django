@@ -35,7 +35,7 @@
                                 <td>{{ item.name }}</td>
                                 <td>{{ item.price_amount }} {{ item.currency }} ({{ item.price_unit | capfirst}}) </td>
                                 <td class="actions">
-                                    <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
+                                    <a href="{% url 'menu:detail' item.id %}">Detalles</a><br>
                                     <a href="{% url 'menu:update' item.id %}">Update</a><br>
                                     <a href="{% url 'menu:delete' item.id %}">Delete</a>
                                 </td>
