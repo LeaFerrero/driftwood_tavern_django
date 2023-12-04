@@ -20,6 +20,14 @@ class Menu(Model):
         ("pp", "pp"),
     ]
 
+    UNIT_CHOICES = [
+        ("plate", "plate"),
+        ("portion", "portion"),
+        ("bottle", "bottle"),
+        ("glass", "glass"),
+    ]
+
+
     name = models.CharField(
         max_length=255, 
         blank=False, 
@@ -43,6 +51,9 @@ class Menu(Model):
     
     item_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
 
+    price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES)
+
+
 
     class Meta:
         db_table = "dwt_menu_items"
@@ -50,6 +61,13 @@ class Menu(Model):
 
     def __str__(self):
         return f"Name: {self.name}, type: {self.item_type}, price: {self.price_amount} {self.currency}"
+
+
+    def clean(self):
+        if self.item_type == 'food' and self.price_unit not in ['portion', 'plate']:
+            raise ValidationError("For food, price_unit must be 'portion' or 'plate'.")
+        elif self.item_type == 'drink' and self.price_unit not in ['bottle', 'glass']:
+            raise ValidationError("For drink, price_unit must be 'bottle' or 'glass'.")
 
     def get_fields(self):
         return [
