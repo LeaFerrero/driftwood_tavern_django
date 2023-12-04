@@ -49,7 +49,7 @@ class Menu(Model):
     
     currency = models.CharField(max_length=10, choices=CURRENCY_CHOICES)
     
-    price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES, default='unit')
+    price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES)
     
     item_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
 
