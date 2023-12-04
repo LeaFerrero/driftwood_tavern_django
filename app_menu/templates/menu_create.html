@@ -8,16 +8,18 @@
             <h1>{{current_page}}</h1>
             <form method="post" class="app-menu-form">
                 {% csrf_token %}
-                {{ form.as_div }}
-
                 {% for field in form %}
-                {% if field.errors %}
-                <div class="app-error-container">
-                    {% for error in field.errors %}
-                    <p class="app-error-message">{{ field.label_tag }}hola {{ error }}</p>
-                    {% endfor %}
+                <div class="app-form-field {% if field.errors %}has-error{% endif %}">
+                    {{ field.label_tag }}
+                    {{ field }}
+                    {% if field.errors %}
+                    <div class="app-error-container">
+                        {% for error in field.errors %}
+                        <p class="app-error-message">{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
-                {% endif %}
                 {% endfor %}
 
                 <input type="submit" value="{{ current_page }}" />
