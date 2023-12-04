@@ -64,9 +64,9 @@ class Menu(Model):
     
     def clean(self):
         if self.item_type == 'food' and self.price_unit not in ['portion', 'plate']:
-            raise ValidationError("For food, price_unit must be 'portion' or 'plate'.")
+            raise ValidationError("For food, 'portion' or 'plate'.")
         elif self.item_type == 'drink' and self.price_unit not in ['bottle', 'glass']:
-            raise ValidationError("For drink, price_unit must be 'bottle' or 'glass'.")
+            raise ValidationError("For drink, 'bottle' or 'glass'.")
 
     def get_fields(self):
         return [
