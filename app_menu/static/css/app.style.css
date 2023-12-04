@@ -117,9 +117,8 @@
     font-family: var(--fontForm);
 }
 
-.app-menu-form div {
+.app-menu-form table {
     margin-top: 1em;
-    position: relative;
 }
 
 .app-menu-form label {
@@ -169,10 +168,8 @@
 .error-container {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
-    right: 0;
     font-size: clamp(0.9em, 2vw, 1em);
     list-style-type: none;
-    position: absolute;
     top: 0;
 }
 
