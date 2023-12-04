@@ -98,7 +98,7 @@ WSGI_APPLICATION = "driftwood_tavern_django.wsgi.application"
 DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.mysql",
-            "NAME": "leaferrero$driftwood_tavern_menu ",
+            "NAME": "leaferrero$driftwood_tavern_menu",
             "USER": "leaferrero",
             "PASSWORD": "*dwt123*",
             "HOST": "leaferrero.mysql.pythonanywhere-services.com",
