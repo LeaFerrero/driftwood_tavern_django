@@ -142,10 +142,10 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static/",
-#    BASE_DIR / "app_menu/static/"
-#]
+STATICFILES_DIRS = [
+    BASE_DIR / "static/",
+    BASE_DIR / "app_menu/static/"
+]
 
 STATIC_ROOT = BASE_DIR / "static/"
 
