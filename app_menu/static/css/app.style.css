@@ -90,6 +90,12 @@
     background-color: var(--colorBackgoundItemsTable);
 }
 
+
+.actions a {
+    color: #000;
+    margin: 0.5em 0 0.5em 0;
+}
+
 /* Formulario */
 .app-menu-form {
     padding-top: 1em;
