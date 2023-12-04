@@ -49,9 +49,10 @@ class Menu(Model):
     
     currency = models.CharField(max_length=10, choices=CURRENCY_CHOICES)
     
+    price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES, default='unit')
+    
     item_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
 
-    price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES)
 
 
 
@@ -62,7 +63,7 @@ class Menu(Model):
     def __str__(self):
         return f"Name: {self.name}, type: {self.item_type}, price: {self.price_amount} {self.currency}"
 
-
+    
     def clean(self):
         if self.item_type == 'food' and self.price_unit not in ['portion', 'plate']:
             raise ValidationError("For food, price_unit must be 'portion' or 'plate'.")
