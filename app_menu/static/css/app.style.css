@@ -90,9 +90,15 @@
     background-color: var(--colorBackgoundItemsTable);
 }
 
+#actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1em;
+}
+
 #actions a {
     color: #000;
-    margin: 1em 0 1em 0;
 }
 
 /* Formulario */
