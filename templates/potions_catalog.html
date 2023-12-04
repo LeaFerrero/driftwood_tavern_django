@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
 <section class="potions-catalog section-main" id="potions-catalog">
@@ -7,5 +8,11 @@
     </div>
     <div id="app"></div>
 </section>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script type="module" src="{% static 'js/potions-catalog.script.js' %}"></script>
 
 {% endblock %}

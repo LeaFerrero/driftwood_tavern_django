@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
 <section class="form-contact section-main">
@@ -33,7 +34,13 @@
             <input type="submit" class="form-submit" id=submit value="Enviar">
         </form>
     </div>
-    <img class="image" src="../assets/media/images/scroll-of-sending.png" alt="scroll pciture">
+    <img class="image" src="{% static 'media/images/scroll-of-sending.png' %}" alt="scroll pciture">
 </section>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script type="module" src=".{% static 'js/validations.script.js' %}"></script>
 
 {% endblock %}

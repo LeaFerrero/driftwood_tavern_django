@@ -51,14 +51,14 @@
             <ul class="social-media-links-list">
                 <li>Facebook<a href="https://www.facebook.com/dndbeyond/" target="_blank"
                         rel="noopener noreferrer nofollow">
-                        <img src="{% static '' %}media/icons/facebook.png" alt="facebook icon">
+                        <img src="{% static 'media/icons/facebook.png' %}" alt="facebook icon">
                     </a></li>
                 <li>Twitter<a href="https://twitter.com/DnDBeyond" target="_blank" rel="noopener noreferrer nofollow">
-                        <img src="{% static '' %}media/icons/gorjeo.png" alt="twitter icon">
+                        <img src="{% static 'media/icons/gorjeo.png' %}" alt="twitter icon">
                     </a></li>
                 <li>Instagram<a href="https://www.instagram.com/dndbeyond/?hl=es" target="_blank"
                         rel="noopener noreferrer nofollow">
-                        <img src="{% static '' %}media/icons/instagram.png" alt="instagram icon">
+                        <img src="{% static 'media/icons/instagram.png' %}" alt="instagram icon">
                     </a></li>
             </ul>
         </section>
@@ -78,9 +78,11 @@
         </section>
     </footer>
 
-    <script type="module" src="{% static '' %}js/menu.script.js"></script>
-    <script type="module" src=".{% static '' %}js/validations.script.js"></script>
-    <script type="module" src=".{% static '' %}js/potions-catalog.script.js"></script>
+    <script type="module" src="{% static 'js/menu.script.js' %}"></script>
+
+    {% block scripts %}
+    {% endblock %}
+
 </body>
 
 </html>

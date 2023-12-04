@@ -1,8 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
 <section class="logo-section" id="logo-section">
-    <img class="logo" src="./assets/media/images/driftwoodtavern.png" alt="tavern logo">
+    <img class="logo" src="{% static 'media/images/driftwoodtavern.png' %}" alt="tavern logo">
 </section>
 
 <section class="tavern section-main">
@@ -20,7 +21,7 @@
             Welcome to a feast of flavors and camaraderie!"
         </p>
     </div>
-    <img class="image" src="./assets/media/images/party-eating.png" alt="party eating">
+    <img class="image" src="{% static 'media/images/party-eating.png' %}" alt="party eating">
 </section>
 
 <section class="inn section-main">
@@ -32,7 +33,7 @@
             perfect for enjoying a long rest and replenishing those spent spell slots in total comfort.
         </p>
     </div>
-    <img class="image" src="./assets/media/images/bedroom.png" alt="bedroom">
+    <img class="image" src="{% static 'media/images/bedroom.png' %}" alt="bedroom">
 </section>
 
 <section class="shows section-main">
@@ -45,7 +46,7 @@
             imagination.
         </p>
     </div>
-    <img class="image" src="./assets/media/images/bardic-inspiration.png" alt="bard playing a lute on a table">
+    <img class="image" src="{% static 'media/images/bardic-inspiration.png' %}" alt="bard playing a lute on a table">
 </section>
 
 <section class="stable section-main">
@@ -62,7 +63,7 @@
             our stables are designed to accommodate them all.
         </p>
     </div>
-    <img class="image" src="./assets/media/images/stable.png" alt="interior of a stable with a horse">
+    <img class="image" src="{% static 'media/images/stable.png' %}" alt="interior of a stable with a horse">
 </section>
 
 <section class="potions section-main">
@@ -77,7 +78,7 @@
             Whatever your need, we're here to ensure you're fully equipped and ready to face any adversity.
         </p>
     </div>
-    <img class="image" src="./assets/media/images/potions-catalog.png" alt="potion display shelf">
+    <img class="image" src="{% static 'media/images/potions-catalog.png' %}" alt="potion display shelf">
 </section>
 
 {% endblock %}
