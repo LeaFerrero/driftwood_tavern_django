@@ -13,10 +13,10 @@
             <p>{{ menu.description }}</p>
 
             <h3>Price:</h3>
-            <p>{{ menu.price_amount }} {{ menu.currency }} (per {{ menu.price_unit }})</p>
+            <p>{{ menu.price_amount }} {{ menu.currency }} ({{ menu.price_unit | capfirst}})</p>
 
             <h3>Type:</h3>
-            <p>Type: {{menu.item_type}}</p>
+            <p>Type: {{menu.item_type | capfirst}}</p>
 
             <form method="post">
                 {% csrf_token %}

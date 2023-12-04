@@ -14,10 +14,10 @@
             <p>{{ menu.description }}</p>
 
             <h3>Price:</h3>
-            <p>{{ menu.price_amount }} {{ menu.currency }} (per {{ menu.price_unit }})</p>
+            <p>{{ menu.price_amount }} {{ menu.currency }} ({{ menu.price_unit | capfirst}})</p>
 
             <h3>Type:</h3>
-            <p>{{menu.item_type}}</p>
+            <p>{{menu.item_type | capfirst}}</p>
 
             <a href="{% url 'menu:all' %}"><button class="back-button">Back to Menu</button></a>
         </div>
