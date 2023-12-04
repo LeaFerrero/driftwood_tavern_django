@@ -26,6 +26,7 @@ class Menu(Model):
         ("portion", "Portion"),
         ("bottle", "Bottle"),
         ("glass", "Glass"),
+        ("cup", "Cup")
     ]
 
 
@@ -60,13 +61,6 @@ class Menu(Model):
 
     def __str__(self):
         return f"Name: {self.name}, type: {self.item_type}, price: {self.price_amount} {self.currency}"
-
-    
-    def clean(self):
-        if self.item_type == 'food' and self.price_unit not in ['portion', 'plate']:
-            raise ValidationError("For food, 'portion' or 'plate'.")
-        elif self.item_type == 'drink' and self.price_unit not in ['bottle', 'glass']:
-            raise ValidationError("For drink, 'bottle' or 'glass'.")
 
     def get_fields(self):
         return [
