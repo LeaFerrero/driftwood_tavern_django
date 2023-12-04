@@ -12,9 +12,9 @@
 
                 {% for field in form %}
                 {% if field.errors %}
-                <div class="error-container">
+                <div class="app-error-container">
                     {% for error in field.errors %}
-                    <p class="error-message">{{ field.label_tag }}: {{ error }}</p>
+                    <p class="app-error-message">{{ field.label_tag }}: {{ error }}</p>
                     {% endfor %}
                 </div>
                 {% endif %}

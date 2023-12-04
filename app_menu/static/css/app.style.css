@@ -176,13 +176,13 @@
     top: 0;
 }*/
 
-.error-container {
+.app-error-container {
     color: red;
     margin-top: 5px;
     /* Ajusta según sea necesario */
 }
 
-.error-message {
+.app-error-message {
     margin-bottom: 5px;
     /* Ajusta según sea necesario */
 }
