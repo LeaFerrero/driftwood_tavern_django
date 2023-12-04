@@ -166,6 +166,17 @@
     background-color: var(--colorCancelButton);
 }
 
+.error-message {
+    color: var(--colorErrorMessage);
+    font-family: var(--fontErrorMessage);
+    right: 0;
+    font-size: clamp(0.9em, 2vw, 1em);
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+}
+
+
 /* Mediaqueris */
 @media screen and (min-width: 1080px) {
     .app-menu {
