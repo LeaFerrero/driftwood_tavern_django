@@ -8,17 +8,17 @@
             <h1>{{current_page}}</h1>
             <form method="post" class="app-menu-form">
                 {% csrf_token %}
-                {{ form.as_table }}
+                {{ form.as_div }}
 
-                {% if form.errors %}
+                {% for field in form %}
+                {% if field.errors %}
                 <div class="error-container">
-                    {% for field in form %}
-                    {% if field.errors %}
-                    <p class="error-message">{{ field.label_tag }}: {{ field.errors.0 }}</p>
-                    {% endif %}
+                    {% for error in field.errors %}
+                    <p class="error-message">{{ field.label_tag }}: {{ error }}</p>
                     {% endfor %}
                 </div>
                 {% endif %}
+                {% endfor %}
 
                 <input type="submit" value="{{ current_page }}" />
             </form>
