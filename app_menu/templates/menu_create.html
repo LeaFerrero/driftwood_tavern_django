@@ -11,11 +11,13 @@
                 {{ form.as_div }}
 
                 {% if form.errors %}
-                <ul class="errorlist">
-                    {% for error in form.errors %}
-                    <li>{{ error }}</li>
+                <div class="error-container">
+                    {% for field in form %}
+                    {% if field.errors %}
+                    <p class="error-message">{{ field.label }}: {{ field.errors.0 }}</p>
+                    {% endif %}
                     {% endfor %}
-                </ul>
+                </div>
                 {% endif %}
 
                 <input type="submit" value="{{ current_page }}" />
