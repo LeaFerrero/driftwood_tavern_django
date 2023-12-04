@@ -34,7 +34,7 @@
                             <tr>
                                 <td>{{ item.name }}</td>
                                 <td>{{ item.price_amount }} {{ item.currency }} ({{ item.price_unit | capfirst}}) </td>
-                                <td class="actions">
+                                <td id="actions">
                                     <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
                                     <a href="{% url 'menu:update' item.id %}">Update</a><br>
                                     <a href="{% url 'menu:delete' item.id %}">Delete</a>
@@ -65,8 +65,8 @@
 
                             <tr>
                                 <td>{{ item.name }}</td>
-                                <td>{{ item.price_amount }} {{ item.currency }} ({{ menu.price_unit | capfirst}})</td>
-                                <td class="actions">
+                                <td>{{ item.price_amount }} {{ item.currency }} ({{ item.price_unit | capfirst}})</td>
+                                <td id="actions">
                                     <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
                                     <a href="{% url 'menu:update' item.id %}">Update</a><br>
                                     <a href="{% url 'menu:delete' item.id %}">Delete</a>
