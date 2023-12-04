@@ -2,6 +2,7 @@ from django.db import models
 from django.db.models import Model
 from django.core.validators import MaxLengthValidator
 from django.core.validators import MinValueValidator
+from django.core.exceptions import ValidationError
 
 # Create your models here.
 
@@ -21,10 +22,10 @@ class Menu(Model):
     ]
 
     UNIT_CHOICES = [
-        ("plate", "plate"),
-        ("portion", "portion"),
-        ("bottle", "bottle"),
-        ("glass", "glass"),
+        ("plate", "Plate"),
+        ("portion", "Portion"),
+        ("bottle", "Bottle"),
+        ("glass", "Glass"),
     ]
 
 
@@ -52,9 +53,6 @@ class Menu(Model):
     price_unit = models.CharField(max_length=10, choices=UNIT_CHOICES)
     
     item_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
-
-
-
 
     class Meta:
         db_table = "dwt_menu_items"
