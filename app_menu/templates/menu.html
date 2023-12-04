@@ -68,10 +68,12 @@
                                 <td>{{ item.name }}</td>
                                 <td>{{ item.price_amount }} {{ item.currency }} <br> ({{ item.price_unit | capfirst}})
                                 </td>
-                                <td id="actions">
-                                    <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
-                                    <a href="{% url 'menu:update' item.id %}">Update</a><br>
-                                    <a href="{% url 'menu:delete' item.id %}">Delete</a>
+                                <td>
+                                    <div class="actions">
+                                        <a href="{% url 'menu:detail' item.id %}">Detail</a><br>
+                                        <a href="{% url 'menu:update' item.id %}">Update</a><br>
+                                        <a href="{% url 'menu:delete' item.id %}">Delete</a>
+                                    </div>
                                 </td>
                             </tr>
 

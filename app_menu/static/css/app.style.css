@@ -90,14 +90,14 @@
     background-color: var(--colorBackgoundItemsTable);
 }
 
-#actions {
+.actions {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.1em;
 }
 
-#actions a {
+.actions a {
     color: #000;
 }
 
