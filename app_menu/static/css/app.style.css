@@ -119,7 +119,7 @@
 
 .app-menu-form div {
     margin-top: 1em;
-
+    position: relative;
 }
 
 .app-menu-form label {
@@ -166,27 +166,16 @@
     background-color: var(--colorCancelButton);
 }
 
-/*
-.error-container {
+.app-error-message {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
     right: 0;
     font-size: clamp(0.9em, 2vw, 1em);
     list-style-type: none;
+    position: absolute;
     top: 0;
-}*/
-
-.app-error-container {
-    color: red;
-    margin-top: 5px;
-    /* Ajusta según sea necesario */
 }
 
-.app-error-message {
-    margin-bottom: 5px;
-    color: red;
-    /* Ajusta según sea necesario */
-}
 
 /* Mediaqueris */
 @media screen and (min-width: 1080px) {
