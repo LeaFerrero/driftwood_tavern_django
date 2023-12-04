@@ -166,7 +166,7 @@
     background-color: var(--colorCancelButton);
 }
 
-.app-menu-form li {
+.errorlist {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
     right: 0;
