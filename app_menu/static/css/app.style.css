@@ -166,7 +166,7 @@
     background-color: var(--colorCancelButton);
 }
 
-.error-message {
+.error-container {
     color: var(--colorErrorMessage);
     font-family: var(--fontErrorMessage);
     right: 0;
