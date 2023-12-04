@@ -184,6 +184,7 @@
 
 .app-error-message {
     margin-bottom: 5px;
+    color: red;
     /* Ajusta según sea necesario */
 }
 
