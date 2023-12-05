@@ -171,7 +171,6 @@
 <h2>9 - Desarrollos Futuros y Mejoras Potenciales:</h2>
 <ul>
   <li>Cerear una animacion de rueda de carga para mostrar antes de que carge la tabla de pociones.</li>
-  <li>Formulario para enviar reservas.</li>
 </ul>
 
 <h2>10 - Contacto:</h2>
@@ -181,7 +180,7 @@
 
 <h2>11 - Fecha de entrega:</h2>
 <ul>
-  <li><b>30 de Octubre de 2023</b></li>
+  <li><b>5 de Diciembre de 2023</b></li>
 </ul>
 
 <h2>12 - Acreditaciones adicionales:</h2>
