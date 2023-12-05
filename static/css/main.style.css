@@ -95,34 +95,34 @@ iframe {
 }
 
 /* Tablas */
-table {
+#potions-catalog table {
     box-sizing: border-box;
     width: 100%;
     border-collapse: collapse;
 }
 
-table,
-th,
-td {
+#potions-catalog table,
+#potions-catalog th,
+#potions-catalog td {
     padding: 2em;
     text-align: center;
 }
 
-thead {
+#potions-catalog thead {
     font-family: var(--fontItemsTableHeader);
     font-size: clamp(1em, 5vw, 1.5em);
     text-align: center;
 }
 
-tbody {
+#potions-catalog tbody {
     font-family: var(--fontItemsBody);
 }
 
-tbody tr:nth-child(odd) {
+#potions-catalog tbody tr:nth-child(odd) {
     background-color: var(--colorBackgoundItemsTable);
 }
 
-td {
+#potions-catalog td {
     height: 5em;
 }
 
