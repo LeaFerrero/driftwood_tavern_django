@@ -13,10 +13,32 @@
   </li>
 </ul>
 
+
 <h2>2 - Publico objetivo</h2>
 <ul>
   <li>
     <b>Publico:</b> Aventureros que se encuentren en busca de un buen lugar donde comer, descansar o reabastecer su inventario de pociones.
+  </li>
+</ul>
+
+<h2>3 - Tecnologias utilizadas</h2>
+<ul>
+  <li><strong>Frontend</strong>:
+    <ul>
+      <li>Lenguajes: HTML, CSS, JavaScript</li>
+    </ul>
+  </li>
+  <li><strong>Backend</strong>:
+    <ul>
+      <li>Lenguaje de programación: Python</li>
+      <li>Frameworks o librerías: Django</li>
+      <li>Base de datos: MySQL</li>
+    </ul>
+  </li>
+  <li><strong>Deploy</strong>:
+    <ul>
+      <li>Plataforma de deploy: PythonAnywhere</li>
+    </ul>
   </li>
 </ul>
 
