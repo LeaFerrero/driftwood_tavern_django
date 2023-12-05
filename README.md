@@ -142,6 +142,7 @@
 <ul>
   <li><b>Estructura:</b><br>
 
+    ```
       Home
       ├── Our History
       ├── Location
@@ -153,6 +154,8 @@
       ├── Potions Catalog
       ├── Contact Us
       └── Social Media
+    
+    ```
 
   </li>
   <br>
@@ -190,7 +193,7 @@
 
 <p>A continuación unas imagenes de las páginas del manual:</p>
 <img src="https://tothetablereviews.files.wordpress.com/2014/09/img_3155.jpg" alt="imagen de manual DnD">
-<img src="https://lh3.googleusercontent.com/pw/ADCreHdjdbAj6ym2A6nPfR2QWtja0VIPc38EuSvYOkn7xWo9mOy_uSPLluW7MiFLcMxl_ovN5zm-saKh1tYiCrZnSjo0mU9g9d2W7obs6MqJ8yWwjtWFG9hb8sc2RwC6Mvg9p_ZJSrcR9hHhsalprd_P92ePYBBC5BT0AzuJrjj1uslsDsPKymNbY25CEMrqwEyz1JNeCJASN3DjO03pnyg9MofXp9nw_I7FdEkCgXNiIsfkZp_RqIoFYu6vau88zSG9jlWD5MlerfCD7snZZkP_4cTMcZq2gZew4jLZYFg6mJiAYr8Df6_8eHzrEhrXRNHqWMkbXf-FOvPNXKJO5nvaD_zyU5qMMUWUA7YWmvXIA99ETJZ-RCKQLehTDjJpRfFvTQDWZbLpd6sXmsT7dbZR2-Iu2c0ynEV5fhJ8g_FpRcplQnX0qLK30AycVt1o36veaJb1r7aHCWbweG7XTjG3CitE7J9siQXIHTY0Wz5aAqQCAfWOkOskExH-5zMmLbf4-oORuvZh1JZA7Zeq1mk66OaOcUmtq4pkgiyvNEHY4hQqJFKU7Oz67HGpB2Vl1BbIfwBySF7bihCLjI27rWIdrTADOUiywRU5GUWFmjX_9K96MqU0TX4WgYWB1ln5sSuOdTEBriPVyEW5ZKrI2tLjsmQkOWJ6wmFXl7f9bc_My0buo6i5MphKVda6nbnN9nE9Mk5CFpyaYdwq0Bxg-2cAhnE3zG0ti6-O40TkzfpX0enuXI4KwdarBw1KxNauCI5fjc9ncWdxg3KrjjhXs0n9cnuTSunf65NMdHDQf_6-TyF5V0OUGF57B8ULxCpD0w-YgCLxD9TPaPfYhGTwAp9dqRLnbQ0K98W92Qv7yCKwcmqxcvfzAhlTXdJlfjnAH1PP3ClzpFRYMShtcc3OJCFFQepytHYipiDi0z3JJf1t9ZPl9rhVNTUxBr8yeJtuk04xs8ZAeP3mOOAhruL9dsdvlF0NWFuC-w=w1343-h869-s-no?authuser=0" alt="imagen de manual DnD">
+<img src="https://lh3.googleusercontent.com/fife/AK0iWDxiIRSGNdBCG2rRM-3Rak_oqzzw0vV-TrTfG9n3glf9whOVhsehr3HswtdaAryP91RVjr7FJdbKGpBYYxTbsHb7G48Hsugp9Jjzas9vv-JnZc0ehk9yDzcfKFqgjdeUk0zAw7ow6n4TYnbfmLisraQKoVXl00X_xTHdB-YHsgfUcS7BbOcj3zrWoi8Bj3aYYrusykN_3uEtGW41ndsJJIMPnFS7pq_Tlth5ZgS6d-tn1lSmne21MR9nP15EnxH5a-pFvsCgck_NuZXx8LjmZuPB4s2NelP9d4d7pCa5w8OKP_6Be4UujBoCUa5bkqtAIDFWwPP5c_rH1iuNWOUXw5DntKMu1iIc3vlQqpjic3vaADwr6KFb8ZcFNOnVEXP4KxPpMzYKG1cZ9u4LGNes3QA5DZVc-CjnixUzWphfE2TnXCy6UIfquiGY8p4Y2Sla4h8SfIdA9SmxEZZbJK0JPz_TwJgSpDt8Oancy6dcF94xvPjvYXDUeGzo4BI74o9GysPuFC7DbF1tZHhmUQFzs3ruXS1hBCvyS2V0nbx-8FmchAp6RhxuW669mdflxf1P_eNK135ZuwHliUiEaKz1dE0udXZMxRTQHhpOfUpAW8VFFRwlYjpdRPFdiOxSOyi4OXg2TftPwc9agQMF8CYhCQRgROvcGH3vv2cDLpFGDJPpbvY3KS_OxzJ4hhss10n35iUnbiGLJwiWfDWIpmuee2gJ3i11916Zw2bm5SgEunV4QKAkwl_fXTpMdYf-Dj7O-38byR7x6Z5jk_xo8zGbHuKxmSsQGrlcNWRA2FNdJ_FIqubeiFvghEWSEXFw1sIZr7pjAeeyO3aGeOgCKx65G_y1NOHHYb4Dt7Xzr9ttkV7E7F9OPBNT_TFGhrskOoC0Pg8Hzoc61AoIpCxbSQ5rL5luAw7D0F68K5vHQbC2q9RjaNNsKh_z7NTGGYlE38jmaCPxbkajYkcpWKrL01zfg6smzjcGO3YOXKYMii3fWk4IbXoMoOMcbQ8-_pBtRBKht3qzP7kALY9Rh_ul0TPBaspSgNIQENZ5YcCDxuRpewquIu_Zehhf4zZ4hflp4liGVB-w5pcJ1vNylujGQ8mtkkzuhvx7JOZZ3CejL94no0LkTXdr0r7nSgMkBCQyJFFXOC1OasBWMEUiwMCSNyah_csuqyT4u2EAL_ramC_Pzq8f28Ezk_Dv8IHYvOVbnjN1Oi_jQAZHfUcOiarVqXkAAq0sQgxJUwCTGZGa1irzicXCvEJFv8tWE0_4xiDBR9yXziCvbhE29WmS9BQDaCI1yYRY48BVUwmvemtzUP6e_ynvg7OIw1JyzCGdJ3wsrXaX3pZagQchF6JDH1RHELQJPbU-tV6WqV0LrqxhfpSU9x08gDLngk3TBET0T0mlrLquXT0Uur0AMzGSyQbEBb49crOqnOaqJ8OeJoEZm-JVg8RgRjUcHGP8Vng1ugiOzyLwOAUdTl84B0ePRcvWLIWj9wPiywrD4L-7NETbUWFjYxr4ne6Mo_svenPbCfP8Mv9HV3hUQTQdRO5YBk0C1AeQ5xNTRy4fgYRZrAmz2N6Qzgf4YvnwrVK6arKWWCQhaEUJK3X2robQakDM-31Dcnxtw9V-y7UY2fPwka2qPcIXINB_ViorRI5sVlKzY6cNa5rAEvlgFduOCvpLonRyqnxS-kOVl2hLb2wn0RIDldwcFI8kez9rgrd_FWLZ24PP2rYpPaZxGe1PR8TdiQ=s1343-w1343-h869-s-no?authuser=0" alt="imagen de manual DnD">
 <br>
 
 <ul>
@@ -205,8 +208,8 @@
     <ul>
       <li>Mr Eaves Small Caps: encabezados.</li>
       <li>Booksanity: párrafos.</li>
-      <li>Scaly Sans: formulario, mensaje de error en el formulario, footer, tbody de la tabla de pociones.</li>
-      <li>Scaly Sans Bold: thead de la tabla de pociones.</li>
+      <li>Scaly Sans: formularios, mensaje de error de los formularios, texto de botones, footer, tbody de las tablas de menu y de pociones.</li>
+      <li>Scaly Sans Bold: thead de las tablas de menu y de pociones.</li>
       <li>Scaly Sans Caps: menú desplegable.</li>
     </ul>
   </li>
