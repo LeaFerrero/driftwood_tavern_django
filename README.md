@@ -42,7 +42,100 @@
   </li>
 </ul>
 
-<h2>3 - Estructura del sitio</h2>
+<h2>4 - Estructura de archivos y carpetas del proyecto.</h2>
+  .
+  ├── README.md
+  ├── app_menu
+  │   ├── __init__.py
+  │   ├── admin.py
+  │   ├── apps.py
+  │   ├── migrations
+  │   │   ├── 0001_initial.py
+  │   │   ├── 0002_alter_menu_table.py
+  │   │   ├── 0003_alter_menu_options.py
+  │   │   ├── 0004_remove_menu_price_menu_currency_menu_price_amount.py
+  │   │   ├── 0005_alter_menu_currency_alter_menu_description_and_more.py
+  │   │   ├── 0006_alter_menu_item_type.py
+  │   │   └── __init__.py
+  │   ├── models.py
+  │   ├── router.py
+  │   ├── serializers.py
+  │   ├── static
+  │   │   ├── css
+  │   │   │   ├── app.general.style.css
+  │   │   │   ├── app.keyframe.style.css
+  │   │   │   └── app.style.css
+  │   │   └── media
+  │   │       └── fonts
+  │   │           ├── Bookinsanity.otf
+  │   │           ├── Mr-Eaves-Small-Caps.otf
+  │   │           ├── Scaly-Sans-Bold.otf
+  │   │           ├── Scaly-Sans-Caps.otf
+  │   │           └── Scaly-Sans.otf
+  │   ├── templates
+  │   │   ├── menu.html
+  │   │   ├── menu_create.html
+  │   │   ├── menu_delete.html
+  │   │   └── menu_detail.html
+  │   ├── tests.py
+  │   ├── urls.py
+  │   ├── views.py
+  │   └── viewsets.py
+  ├── driftwood_tavern_django
+  │   ├── __init__.py
+  │   ├── asgi.py
+  │   ├── settings.py
+  │   ├── urls.py
+  │   ├── views.py
+  │   └── wsgi.py
+  ├── manage.py
+  ├── requirements.txt
+  ├── static
+  │   ├── css
+  │   │   ├── footer.style.css
+  │   │   ├── general.style.css
+  │   │   ├── header.style.css
+  │   │   ├── keyframe.style.css
+  │   │   └── main.style.css
+  │   ├── js
+  │   │   ├── menu.script.js
+  │   │   ├── potions-catalog.script.js
+  │   │   ├── render.script.js
+  │   │   ├── renderData.script.js
+  │   │   └── validations.script.js
+  │   └── media
+  │       ├── fonts
+  │       │   ├── Bookinsanity.otf
+  │       │   ├── Mr-Eaves-Small-Caps.otf
+  │       │   ├── Scaly-Sans-Bold.otf
+  │       │   ├── Scaly-Sans-Caps.otf
+  │       │   └── Scaly-Sans.otf
+  │       ├── icons
+  │       │   ├── facebook.png
+  │       │   ├── galeon.png
+  │       │   ├── gorjeo.png
+  │       │   └── instagram.png
+  │       └── images
+  │           ├── background.jpg
+  │           ├── bardic-inspiration.png
+  │           ├── bedroom.png
+  │           ├── driftwoodtavern.png
+  │           ├── madam-rosene.png
+  │           ├── note-border.png
+  │           ├── party-eating.png
+  │           ├── potions-catalog.png
+  │           ├── scroll-of-sending.png
+  │           ├── stable.png
+  │           └── tavern-image.png
+  └── templates
+      ├── base.html
+      ├── contact_form.html
+      ├── index.html
+      ├── location.html
+      ├── our_history.html
+      └── potions_catalog.html
+
+<h2>5 - Estructura del sitio</h2>
 <ul>
   <li><b>Estructura:</b><br>
 
@@ -81,7 +174,7 @@
   </li>
 </ul>
 
-<h2>4 - Diseño y Estilo:</h2>
+<h2>6 - Diseño y Estilo:</h2>
 <p>
   Teniendo en cuenta que el sitio web está creado para una taberna dentro del juego de rol de Dungeons & Dragons, se buscó darle la estética del manual de dicho 
   juego, tanto fuentes como paleta de colores se <i><b>sacaron del manual</b></i>. Tambien ciertas decisiones funcionales se basaron en dicha estetica, por ejemplo,     el formulario de contacto dice que "no pueden enviarse mas de 25 palabras", esta decicion no es abritraria, ya que, dento del juego hay un hechizo, <a               
@@ -117,7 +210,7 @@
   </li>
 </ul>
 
-<h2>5 - Contenido y Funcionalidades</h2>
+<h2>7 - Contenido y Funcionalidades</h2>
 <ul>
   <li>
     <b>Contenido:</b>
@@ -163,7 +256,7 @@
   </li>
 </ul>
 
-<h2>6 - Integrantes del equipo y representante:</h2>
+<h2>8 - Integrantes del equipo y representante:</h2>
 <ul>
   <li><b>Equipo:</b> 
     <ul>
@@ -173,36 +266,36 @@
   </li>
 </ul>
 
-<h2>7 - Cronograma Tentativo:</h2>
+<h2>9 - Cronograma Tentativo:</h2>
 <ul>
   <li><b>Diseño y planificación:</b> 1 semana.</li>
   <li><b>Desarrollo y programación:</b> 3 semanas.</li>
   <li><b>Creación de contenido: 1 semana.</b></li>
 </ul>
 
-<h2>8 - Recursos Externos:</h2>
+<h2>10 - Recursos Externos:</h2>
 <ul>
   <li>Consumo de la API <a href="https://open5e.com">Open5e</a> para cargar la lista de pociones que se muestra en la pagina "Potions Catalog".</li>
   <li>Implementación del mapa interactivo de <a href="https://neverwinteractive.com">Neverwinter Interactive Maps</a> en la sección "Location" a través de un iframe.    </li>
   <li>Integración de <a href="https://getform.io">Getform</a> para la funcionalidad del formulario contacto.</li>
 </ul>
 
-<h2>9 - Desarrollos Futuros y Mejoras Potenciales:</h2>
+<h2>11 - Desarrollos Futuros y Mejoras Potenciales:</h2>
 <ul>
   <li>Cerear una animacion de rueda de carga para mostrar antes de que carge la tabla de pociones.</li>
 </ul>
 
-<h2>10 - Contacto:</h2>
+<h2>12 - Contacto:</h2>
 <ul>
   <li><b>Email de representante: </b><a href="mailto:learferrero@gmail.com" target="_blank" rel="noopener noreferrer                                    nofollow">learferrero@gmail.com</a></li>
 </ul>
 
-<h2>11 - Fecha de entrega:</h2>
+<h2>13 - Fecha de entrega:</h2>
 <ul>
   <li><b>5 de Diciembre de 2023</b></li>
 </ul>
 
-<h2>12 - Acreditaciones adicionales:</h2>
+<h2>14 - Acreditaciones adicionales:</h2>
 <p>
   El proyecto se sometio a testeos y se itero varias veces para mejorar tanto el contenido como la experiencia de usuario. Fue una parte importante para el proyecto asi que considero importante dejarlo asentado.<br>
   Los testeos fueron realizados por gente tanto agena al pryecto como Codo a Codo. Se incluye la lista a continuacion, con nombre, 
