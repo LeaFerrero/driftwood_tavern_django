@@ -33,14 +33,19 @@
 <h2>3 - Estructura del sitio</h2>
 <ul>
   <li><b>Estructura:</b>
-    <ul>
-      <li>Home</li>
-      <li>Our History</li>
-      <li>Location</li>
-      <li>Potions Catalog</li>
-      <li>Contact Us</li>
-      <li>Social Media</li>
-    </ul>
+    ```
+    Home
+    ├── Our History
+    ├── Location
+    ├── Menu
+    │   ├── Create
+    │   ├── Read
+    │   ├── Update
+    │   └── Delete
+    ├── Potions Catalog
+    ├── Contact Us
+    └── Social Media
+    ```
   </li>
   <br>
   <li><b>Maquetado:</b>
