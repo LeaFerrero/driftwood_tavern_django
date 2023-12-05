@@ -32,9 +32,8 @@
 
 <h2>3 - Estructura del sitio</h2>
 <ul>
-  <li><b>Estructura:</b>
-    ```
-    Home
+  <li><b>Estructura:</b><br>
+    ```Home
     ├── Our History
     ├── Location
     ├── Menu
@@ -44,8 +43,7 @@
     │   └── Delete
     ├── Potions Catalog
     ├── Contact Us
-    └── Social Media
-    ```
+    └── Social Media```
   </li>
   <br>
   <li><b>Maquetado:</b>
@@ -112,6 +110,7 @@
       <li>Información detallada sobre los servicios del lugar: taberna, posada, shows, catálogo de pociones y establos.</li>
       <li>Información detallada de la historia del lugar.</li>
       <li>Información sobre cómo llegar.</li>
+      <li>Información del menú de la taberna, y CRUD para crear, ver detalles, actualizar o borrar los productos del menú .</li>
       <li>Imágenes que acompañan el texto y al formulario:
         <ul>
           <li>Imagen de bardo: Extraída del manual del jugador de Dungeons & Dragons 5ta edición.</li>
