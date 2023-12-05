@@ -266,6 +266,8 @@
       <li>Menu desplegable.</li>
       <li>Formulario de contacto funcional con <a href="https://getform.io">Getform</a>.</li>
       <li>CRUD en la la seccion "MENU": crear, leer, actualizar o eliminar los productos del menu de la taberna.</li>
+      <li>API: Incluye una API que contiene datos del menú, permitiendo a desarrolladores externos interactuar de manera programática con la información del menú.<br>
+      Link a la <a href="http://leaferrero.pythonanywhere.com/menu/api_menu/menu">API</a></li>
     </ul>  
   </li>
 </ul>
