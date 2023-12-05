@@ -72,8 +72,11 @@
 .app-menu-content table,
 .app-menu-content th,
 .app-menu-content td {
-    padding: 1em;
     text-align: center;
+}
+
+.app-menu-content td {
+    padding: 1em 2em;
 }
 
 .app-menu-content thead {
