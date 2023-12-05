@@ -257,7 +257,7 @@
     <ul>
       <li>Menu desplegable.</li>
       <li>Formulario de contacto funcional con <a href="https://getform.io">Getform</a>.</li>
-      <li>CRUD en la la seccion "MENU": crear, leer, actualizar o eliminar un item del menu de la taberna.</li>
+      <li>CRUD en la la seccion "MENU": crear, leer, actualizar o eliminar los productos del menu de la taberna.</li>
     </ul>  
   </li>
 </ul>
