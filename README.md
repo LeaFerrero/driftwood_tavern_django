@@ -43,6 +43,8 @@
 </ul>
 
 <h2>4 - Estructura de archivos y carpetas del proyecto.</h2>
+  
+  ```
   .
   ├── README.md
   ├── app_menu
@@ -134,6 +136,7 @@
       ├── location.html
       ├── our_history.html
       └── potions_catalog.html
+  ```
 
 <h2>5 - Estructura del sitio</h2>
 <ul>
@@ -150,7 +153,6 @@
       ├── Potions Catalog
       ├── Contact Us
       └── Social Media
-
 
   </li>
   <br>
@@ -252,6 +254,7 @@
     <ul>
       <li>Menu desplegable.</li>
       <li>Formulario de contacto funcional con <a href="https://getform.io">Getform</a>.</li>
+      <li>CRUD en la la seccion "MENU", cread, leer, actualizar o eliminar un item del menu de la taberna.</li>
     </ul>  
   </li>
 </ul>
@@ -260,17 +263,10 @@
 <ul>
   <li><b>Equipo:</b> 
     <ul>
-      <li>Leandro Raúl Ferrero: representante, coordinador, maquetacion, diseño, desarrollo, contenido.</li>
-      <li>Janni Granados: desarrollo, formulario, validaciones del formulario.</li>
+      <li>Leandro Raúl Ferrero: representante, coordinador, maquetacion, diseño, desarrollo, contenido, deploy</li>
+      <li>Janni Granados: desarrollo, formulario, validaciones del formulario, correccion de estilos</li>
     </ul>
   </li>
-</ul>
-
-<h2>9 - Cronograma Tentativo:</h2>
-<ul>
-  <li><b>Diseño y planificación:</b> 1 semana.</li>
-  <li><b>Desarrollo y programación:</b> 3 semanas.</li>
-  <li><b>Creación de contenido: 1 semana.</b></li>
 </ul>
 
 <h2>10 - Recursos Externos:</h2>
