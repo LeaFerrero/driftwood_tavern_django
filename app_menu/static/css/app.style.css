@@ -72,7 +72,7 @@
 .app-menu-content table,
 .app-menu-content th,
 .app-menu-content td {
-    padding: 1em 2em;
+    padding: 1em 3.5em;
     text-align: center;
 }
 
@@ -101,7 +101,6 @@
 /* Formulario */
 .app-menu-form {
     padding-top: 1em;
-
 }
 
 .app-menu-form input {
