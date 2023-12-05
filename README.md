@@ -1,15 +1,5 @@
 <h1>Documentacion de TPO CAC - Stio Web Driftwood Tavern - Tavern & inn -</h1>
 
-<h3>Antes de comenzar unas aclaraciones:</h3>
-<ol>
-  <li>
-    El grupo originalmente fue de 5 personas, pero con el paso de la cursada mucha gente dejó y en el caso de este grupo no fue distinto. Uno se fue antes de iniciar el proyecto, y otros dos se salieron a 2 semanas de la entrega y con el trabajo ya iniciado. Honestamente, hubiese sido muy injusto tener que desechar el trabajo hecho o ingresar a otro grupo con trabajo ya hecho, así que el proyecto siguió adelante con solo 2 personas.
-  </li>
-  <li>
-    Hubo problemas con git y no supimos cómo solucionarlos, y si bien el proyecto se desarrollo en conjunto y cada parte aporto lo suyo, los archivos me los pasaban a mí (Leandro Ferrero) y yo me encargaba de hacer el push, por eso están todos hechos por mí. En la parte de acreditacion se indica quien hizo cada parte del proyecto.
-  </li>
-</ol>
-
 <h2>1 - Titulo y descripción del proyecto</h2>
 <ul>
   <li>
@@ -32,15 +22,18 @@
 
 <h2>3 - Estructura del sitio</h2>
 <ul>
-  <li><b>Estructura:</b>
-    <ul>
-      <li>Home</li>
-      <li>Our History</li>
-      <li>Location</li>
-      <li>Potions Catalog</li>
-      <li>Contact Us</li>
-      <li>Social Media</li>
-    </ul>
+  <li><b>Estructura:</b><br>
+      Home
+      ├── Our History
+      ├── Location
+      ├── Menu
+      │   ├── Create
+      │   ├── Read
+      │   ├── Update
+      │   └── Delete
+      ├── Potions Catalog
+      ├── Contact Us
+      └── Social Media
   </li>
   <br>
   <li><b>Maquetado:</b>
