@@ -177,7 +177,7 @@
       </li>
       <li>
         <b>Maquetado de cómo se deberían representar la seccion de Menu (app del sitio):</b> 
-        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/menu-section.png?token=GHSAT0AAAAAACKTNZ3NIKKTB6FZ4PH5NUGMZLPUTJQ" alt="seccion menu">
+        <img src="https://github.com/LeaFerrero/images/blob/main/menu-section.png?raw=true" alt="seccion menu">
       </li>
     </ul>
   </li>
