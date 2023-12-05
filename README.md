@@ -164,11 +164,11 @@
     <ul>
       <li>
         <b>Maquetado para pantallas inferiores a 1080:</b>
-        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/inferior1080.png?token=GHSAT0AAAAAACKTNZ3MHIJK5PD2LY26JSVWZLPUREA" alt="imagen pantallas                 inferiores a 1080">
+        <img src="https://github.com/LeaFerrero/images/blob/main/sueperior1080.png?raw=true" alt="imagen pantallas                 inferiores a 1080">
       </li>
       <li>
         <b>Maquetado para pantallass superiores a 1080:</b>
-        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/sueperior1080.png?token=GHSAT0AAAAAACKTNZ3NBO5M5O7FLDLUWWOGZLPURSQ" alt="imagen pantallas     
+        <img src="https://github.com/LeaFerrero/images/blob/main/inferior1080.png?raw=true" alt="imagen pantallas     
         superiores a 1080">
       </li>
       <li>
