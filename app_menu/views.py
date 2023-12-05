@@ -26,6 +26,7 @@ class MenuBaseView(View):
     model = Menu
     fields = '__all__'
     success_url = reverse_lazy('menu:all')
+    
 
 
 class MenuListView(MenuBaseView,ListView):
@@ -35,6 +36,9 @@ class MenuListView(MenuBaseView,ListView):
     Extra Attributes:
         - None
     """
+    extra_context = {
+        "current_page": "Menu"
+    }
 
 class MenuDetailView(MenuBaseView,DetailView):
     """
