@@ -164,16 +164,20 @@
     <ul>
       <li>
         <b>Maquetado para pantallas inferiores a 1080:</b>
-        <img src="https://raw.githubusercontent.com/LeaFerrero/tpo-driftwood-tavern/main/layout/screen-inferior1080.png" alt="imagen pantallas                 inferiores a 1080">
+        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/inferior1080.png?token=GHSAT0AAAAAACKTNZ3MHIJK5PD2LY26JSVWZLPUREA" alt="imagen pantallas                 inferiores a 1080">
       </li>
       <li>
         <b>Maquetado para pantallass superiores a 1080:</b>
-        <img src="https://raw.githubusercontent.com/LeaFerrero/tpo-driftwood-tavern/main/layout/screen-superior1080.png" alt="imagen pantallas     
+        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/sueperior1080.png?token=GHSAT0AAAAAACKTNZ3NBO5M5O7FLDLUWWOGZLPURSQ" alt="imagen pantallas     
         superiores a 1080">
       </li>
       <li>
         <b>Maquetado de cómo se deberían representar las secciones:</b> 
-        <img src="https://raw.githubusercontent.com/LeaFerrero/tpo-driftwood-tavern/main/layout/section.png" alt="imagen pantallas superiores a 1080">
+        <img src="https://raw.githubusercontent.com/LeaFerrero/tpo-driftwood-tavern/main/layout/section.png" alt="seccion">
+      </li>
+      <li>
+        <b>Maquetado de cómo se deberían representar la seccion de Menu (app del sitio):</b> 
+        <img src="https://raw.githubusercontent.com/LeaFerrero/images/main/menu-section.png?token=GHSAT0AAAAAACKTNZ3NIKKTB6FZ4PH5NUGMZLPUTJQ" alt="seccion menu">
       </li>
     </ul>
   </li>
@@ -193,7 +197,7 @@
 
 <p>A continuación unas imagenes de las páginas del manual:</p>
 <img src="https://tothetablereviews.files.wordpress.com/2014/09/img_3155.jpg" alt="imagen de manual DnD">
-<img src="https://raw.githubusercontent.com/LeaFerrero/tpo-driftwood-tavern/main/layout/sample-design.jpg" alt="imagen de manual DnD">
+<img src="https://github.com/LeaFerrero/images/blob/main/sample-design.jpg" alt="imagen de manual DnD">
 <br>
 
 <ul>
