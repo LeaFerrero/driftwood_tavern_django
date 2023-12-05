@@ -91,7 +91,6 @@ nav h3>a {
   background-color: var(--colorBackground);
   height: 120svh;
   width: 100svw;
-  justify-content: center;
   transition: left 0.5s;
   display: flex;
   align-items: center;

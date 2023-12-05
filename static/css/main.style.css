@@ -122,10 +122,6 @@ iframe {
     background-color: var(--colorBackgoundItemsTable);
 }
 
-#potions-catalog td {
-    height: 5em;
-}
-
 /* Formulario */
 .form {
     padding-top: 1em;

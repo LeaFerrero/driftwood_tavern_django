@@ -72,7 +72,7 @@
 .app-menu-content table,
 .app-menu-content th,
 .app-menu-content td {
-    padding: 0 2.5em 0 2.5em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -92,7 +92,10 @@
 
 .actions a {
     color: #000;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Formulario */
