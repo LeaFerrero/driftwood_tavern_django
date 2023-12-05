@@ -179,6 +179,10 @@
         <b>Maquetado de cómo se deberían representar la seccion de Menu (app del sitio):</b> 
         <img src="https://github.com/LeaFerrero/images/blob/main/menu-section.png?raw=true" alt="seccion menu">
       </li>
+      <li>
+        <b>Maquetado de cómo se debería representar el CRUD, para todas las pantallas (app del sitio):</b> 
+        <img src="https://github.com/LeaFerrero/images/blob/main/CRUD.png?raw=true" alt="CRUD">
+      </li>
     </ul>
   </li>
 </ul>
