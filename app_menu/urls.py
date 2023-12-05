@@ -15,3 +15,13 @@ urlpatterns = [
 ]
 
 urlpatterns += router.urls
+
+"""
+URL patterns for the 'menu' application.
+
+- "" : All menu items
+- "create/" : Create a new menu item
+- "<int:pk>/detail/" : Detailed view for a specific menu item
+- "<int:pk>/update/" : Update view for a specific menu item
+- "<int:pk>/delete/" : Delete view for a specific menu item
+"""

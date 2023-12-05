@@ -2,11 +2,29 @@ from django.db import models
 from django.db.models import Model
 from django.core.validators import MaxLengthValidator
 from django.core.validators import MinValueValidator
-from django.core.exceptions import ValidationError
 
 # Create your models here.
 
 class Menu(Model):
+    """
+    Model representing a menu item.
+
+    Attributes:
+        name (str): Name of the menu item.
+        description (str): Description of the menu item.
+        price_amount (int): Amount of the menu item's price.
+        currency (str): Currency type for the price (cp, sp, ep, gp, pp).
+        price_unit (str): Unit of measurement for the price (plate, portion, bottle, glass, cup).
+        item_type (str): Type of menu item (food, drink).
+
+    Meta:
+        db_table (str): Name of the table in the database.
+        verbose_name_plural (str): Plural name for the admin interface.
+
+    Methods:
+        __str__(): Returns a string representation of the object.
+        get_fields(): Returns a list of tuples with the names and values of the object's fields.
+    """
 
     TYPE_CHOICES = [
         ('food', 'Food'),
@@ -60,9 +78,21 @@ class Menu(Model):
         verbose_name_plural = "Menu Items"
 
     def __str__(self):
+        """
+        Returns a string representation of the object.
+
+        Returns:
+            str: String representation of the object.
+        """
         return f"Name: {self.name}, type: {self.item_type}, price: {self.price_amount} {self.currency}"
 
     def get_fields(self):
+        """
+        Returns a list of tuples with the names and values of the object's fields.
+
+        Returns:
+            list: List of tuples (name, value) of the object's fields.
+        """
         return [
             (field.verbose_name, field.value_from_object(self))
             for field in self.__class__._meta.fields[1:]

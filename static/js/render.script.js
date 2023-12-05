@@ -1,12 +1,12 @@
 /**
- * Una clase para renderizar datos en un contenedor HTML.
+ * A class for rendering data in an HTML container.
  */
 export class Render {
 
     /**
-     * Crea una instancia de la clase Render.
+     * Creates an instance of the Render class.
      *
-     * @param {string} containerID - El ID del contenedor HTML donde se renderizarán los datos.
+     * @param {string} containerID - The ID of the HTML container where data will be rendered.
      */
     constructor(containerID) 
     {
@@ -14,11 +14,11 @@ export class Render {
     }
 
     /**
-     * Recupera datos de una URL y los renderiza en el contenedor HTML.
+     * Fetches data from a URL and renders it in the HTML container.
      *
-     * @param {string} url - La URL desde la cual se recuperarán los datos.
-     * @param {function} callback - Una función que procesa los datos y devuelve elementos HTML.
-     * @param {Object} options - Opciones adicionales para la solicitud fetch (opcional).
+     * @param {string} url - The URL from which data will be retrieved.
+     * @param {function} callback - A function that processes the data and returns HTML elements.
+     * @param {Object} options - Additional options for the fetch request (optional).
      */
     fetchData(url, callback, options = {}) 
     {
@@ -42,10 +42,10 @@ export class Render {
     }
 
     /**
-     * Renderiza elementos HTML en el contenedor especificado.
+     * Renders HTML elements in the specified container.
      *
      * @private
-     * @param {string} items - Elementos HTML a renderizar en el contenedor.
+     * @param {string} items - HTML elements to render in the container.
      */
     #renderInContainer(items) 
     {

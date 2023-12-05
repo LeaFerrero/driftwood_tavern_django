@@ -2,13 +2,13 @@ from django.views.generic import TemplateView
 
 class BaseTemplateView(TemplateView):
     """
-    Clase de vista base para proporcionar plantillas con datos de contexto dinámicos.
+    Base view class to provide templates with dynamic context data.
 
-    Atributos:
-        page_names (dict): Un diccionario que asigna nombres de vista a nombres de visualización personalizados.
+    Attributes:
+        page_names (dict): A dictionary mapping view names to custom display names.
 
-    Métodos:
-        get_context_data(**kwargs): Anula el método get_context_data para incluir datos de contexto personalizados.
+    Methods:
+        get_context_data(**kwargs): Overrides the get_context_data method to include custom context data.
 
     """
 
@@ -22,10 +22,10 @@ class BaseTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         """
-        Anula el método get_context_data para incluir datos de contexto personalizados.
+        Overrides the get_context_data method to include custom context data.
 
         Returns:
-            dict: Un diccionario que contiene los datos de contexto base junto con el nombre de la página actual.
+            dict: A dictionary containing base context data along with the name of the current page.
 
         """
         context = super().get_context_data(**kwargs)
@@ -36,10 +36,10 @@ class BaseTemplateView(TemplateView):
 
 class IndexTemplate(BaseTemplateView):
     """
-    Clase de vista para la página de inicio.
+    View class for the home page.
 
-    Atributos:
-        template_name (str): El nombre de la plantilla asociada a esta vista.
+    Attributes:
+        template_name (str): The name of the template associated with this view.
 
     """
 
@@ -48,10 +48,10 @@ class IndexTemplate(BaseTemplateView):
 
 class LocationTemplate(BaseTemplateView):
     """
-    Clase de vista para la página de ubicación.
+    View class for the location page.
 
-    Atributos:
-        template_name (str): El nombre de la plantilla asociada a esta vista.
+    Attributes:
+        template_name (str): The name of the template associated with this view.
 
     """
 
@@ -60,10 +60,10 @@ class LocationTemplate(BaseTemplateView):
 
 class ContactFormTemplate(BaseTemplateView):
     """
-    Clase de vista para la página de formulario de contacto.
+    View class for the contact form page.
 
-    Atributos:
-        template_name (str): El nombre de la plantilla asociada a esta vista.
+    Attributes:
+        template_name (str): The name of the template associated with this view.
 
     """
 
@@ -72,10 +72,10 @@ class ContactFormTemplate(BaseTemplateView):
 
 class OutHistoryTemplate(BaseTemplateView):
     """
-    Clase de vista para la página de historia.
+    View class for the history page.
 
-    Atributos:
-        template_name (str): El nombre de la plantilla asociada a esta vista.
+    Attributes:
+        template_name (str): The name of the template associated with this view.
 
     """
 
@@ -84,10 +84,10 @@ class OutHistoryTemplate(BaseTemplateView):
 
 class PotionsCatalogTemplate(BaseTemplateView):
     """
-    Clase de vista para la página del catálogo de pociones.
+    View class for the potions catalog page.
 
-    Atributos:
-        template_name (str): El nombre de la plantilla asociada a esta vista.
+    Attributes:
+        template_name (str): The name of the template associated with this view.
 
     """
 

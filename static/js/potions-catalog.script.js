@@ -1,13 +1,13 @@
-// Importa la clase Render desde el archivo "render.script.js"
+// Import the Render class from the "render.script.js" file
 import { Render } from "./render.script.js"
 
-// Importa la función renderData desde el archivo "renderData.script.js"
+// Import the renderData function from the "renderData.script.js" file
 import { renderData } from "./renderData.script.js"
 
-// Crea una instancia de la clase Render y especifica el ID del contenedor como "app"
+// Create an instance of the Render class and specify the container ID as "app"
 const app = new Render("app");
 
-// Utiliza la instancia de Render para recuperar datos de la API y renderizarlos en el contenedor "app"
-// La URL especificada busca elementos mágicos relacionados con "Potion of"
-// La función renderData procesa los datos y devuelve elementos HTML
+// Use the Render instance to fetch data from the API and render it in the "app" container
+// The specified URL searches for magical items related to "Potion of"
+// The renderData function processes the data and returns HTML elements
 app.fetchData("https://api.open5e.com/v1/magicitems/?search=Potion of", renderData);

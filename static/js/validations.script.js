@@ -1,16 +1,16 @@
 /**
- * Valida que el nombre tenga mas de 2 letras y no sea numerico
- * @param {string} name Nombre a validar
- * @returns {boolean} True si el nombre es valido, false si no lo es
+ * Validates that the name has more than 2 letters and is not numeric.
+ * @param {string} name - Name to validate.
+ * @returns {boolean} - True if the name is valid, false otherwise.
  */
 const validateName = (name) => {
   return name.trim().length > 2 && isNaN(Number(name));
 };
 
 /**
- * Valida que el mensaje 1 o mas palabras y menos o igual a 25
- * @param {string} message Mensaje a validar
- * @returns {boolean} True si el mensaje es valido, false si no lo es
+ * Validates that the message has 1 or more words and is less than or equal to 25.
+ * @param {string} message - Message to validate.
+ * @returns {boolean} - True if the message is valid, false otherwise.
  */
 const validateTextArea = (message) => {
   const words = message.split(/\s+/).filter((word) => word.length > 0);
@@ -18,9 +18,9 @@ const validateTextArea = (message) => {
 };
 
 /**
- * Valida que el mail sea valido
- * @param {string} email Email a validar 
- * @returns {boolean} True si el emal es valido, false si no lo es
+ * Validates that the email is valid.
+ * @param {string} email - Email to validate.
+ * @returns {boolean} - True if the email is valid, false otherwise.
  */
 const validateEmail = (email) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,7 +28,7 @@ const validateEmail = (email) => {
 };
 
 /**
- * Cuenta la cantidad de palabas ingresadas en el textarea
+ * Counts the number of words entered in the textarea.
  */
 const wordsCounter = () => {
   const textarea = document.getElementById("message");
@@ -41,10 +41,10 @@ const wordsCounter = () => {
 };
 
 /**
- * Valida un formulario y muestra mensajes de error en campos inválidos.
+ * Validates a form and displays error messages on invalid fields.
  *
- * @param {FormData} formData Los datos del formulario a validar.
- * @returns {boolean} True si el formulario es válido, de lo contrario, false.
+ * @param {FormData} formData - The form data to validate.
+ * @returns {boolean} - True if the form is valid, otherwise, false.
  */
 const validateForm = (formData) => {
   const name = formData.get("name");
@@ -64,7 +64,7 @@ const validateForm = (formData) => {
 
 
 /**
- * Limpia los campos del formulario
+ * Clears the values of the form fields.
  */
 const clearValues = () => {
   document.getElementById("name").textContent = "";
@@ -74,17 +74,16 @@ const clearValues = () => {
 
 
 /**
- * Escucha el evento de envío del formulario y realiza la validación del formulario antes de su envío.
- * Si la validación falla, evita que el formulario se envíe y muestra un mensaje de error. Si la validación es exitosa,
- * muestra una alerta indicando que el formulario fue enviado.
- *
+ * Listens for the form submission event and performs form validation before submission.
+ * If validation fails, prevents the form from submitting and displays an error message.
+ * If validation is successful, shows an alert indicating that the form was submitted.
  */
 const formSubmit = () => {
   document.getElementById("contact-form").addEventListener("submit", (event) => {
-    // Obtiene los datos del formulario
+    // Gets the form data
     const formData = new FormData(event.target);
     
-    // Valida el formulario
+    // Validates the form
     if (!validateForm(formData)) 
     {
       event.preventDefault(); // Evitar que el formulario se envíe si la validación falla
@@ -92,7 +91,7 @@ const formSubmit = () => {
   });
 }
 
-// Inicialización
+// Initialization
 formSubmit();
 wordsCounter();
 clearValues();

@@ -1,20 +1,20 @@
-/* Aca esta el codigo del menu desplegable */
+/* Here is the code for the dropdown menu */
 
 const hamMenu = document.querySelector(".hamburger-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 const linksList = document.querySelectorAll(".navigation-links-list li");
 
-//Agrega un evento de click al menu de hamburguesa
+// Add a click event to the hamburger menu
 hamMenu.addEventListener("click", () => {
-        //Alterna la clase "active" del menu hamburguesa y del menu fuera de pantalla
+        // Toggle the "active" class for the hamburger menu and off-screen menu
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
 });
 
-//Agrega un evento click a cada elemento <li> dentro de la lista de navegacion
+// Add a click event to each <li> element within the navigation list
 linksList.forEach(link => {
-    //Cuando se hace click en un enlace se cierra el menu desplegable
-    //Esto es para que por ejemplo si se clickea "inicio" estando en la pagina de inicio, el menu se cierre y no moleste
+    // When a link is clicked, close the dropdown menu
+    // This is to ensure that if, for example, "home" is clicked while on the home page, the menu closes and doesn't interfere
     link.addEventListener("click", () => {
         hamMenu.classList.toggle("active");
         offScreenMenu.classList.toggle("active");
